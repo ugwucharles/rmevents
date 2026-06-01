@@ -1,0 +1,152 @@
+this.Menu = (function() {
+    function Menu() {
+        var numOfItems, pixelcarveTimeline;
+        this.menuTimeline = new TimelineMax({
+            paused: true
+        });
+        this.menuTimeline.to('#menu', 0.00001, {
+            visibility: 'visible',
+            display: 'block',
+            opacity: '1'
+        }, '0');
+        this.menuTimeline.from('#menu', 0.5, {
+            x: '25%',
+            force3D: true,
+            z: 0.01,
+            rotationY: 0.01,
+            ease: Power1.easeInOut
+        }, '0.01');
+        this.menuTimeline.from('#menu .bubble', 1.25, {
+            scale: 0,
+            force3D: true,
+            borderRadius: '100%',
+            z: 0.01,
+            rotationY: 0.01,
+            ease: Power4.easeInOut
+        }, '0.01');
+        this.menuTimeline.from('.anotherLink', 0.3, {
+            opacity: 0,
+            ease: Power1.easeInOut
+        });
+        numOfItems = $('#menu .menu-items li').length / 2;
+        this.menuTimeline.staggerFrom('#menu .menu-items li:nth-child(-n+' + Math.floor(numOfItems) + ')', 1, {
+            x: '50%',
+            y: '50%',
+            z: -150,
+            opacity: 0,
+            force3D: true,
+            rotationY: 0.01,
+            ease: Power4.easeOut
+        }, -0.1, '0.5');
+        this.menuTimeline.staggerFrom('#menu .menu-items li:nth-child(n+' + (Math.floor(numOfItems) + 1) + ')', 1, {
+            x: '50%',
+            y: '-50%',
+            z: -150,
+            opacity: 0,
+            force3D: true,
+            rotationY: 0.01,
+            ease: Power4.easeOut
+        }, 0.1, '0.5');
+        this.menuTimeline.staggerFrom('#menu .top .stagger', 1, {
+            x: 100,
+            y: 25,
+            z: -150,
+            opacity: 0,
+            force3D: true,
+            rotationY: 0.01,
+            ease: Power4.easeOut
+        }, 0.05, '0.8');
+        this.menuTimeline.staggerFrom('#menu .bottom .stagger', 1, {
+            x: 100,
+            y: -25,
+            z: -150,
+            opacity: 0,
+            force3D: true,
+            rotationY: 0.01,
+            ease: Power4.easeOut
+        }, 0.075, '0.8');
+        $('#menu-button').click((function(_this) {
+            return function() {
+                if ($('#menu-button').hasClass('active')) {
+                    return _this.closeMenu();
+                } else {
+                    return _this.openMenu();
+                }
+            };
+        })(this));
+        $('body').click((function(_this) {
+            return function(e) {
+                if (($(e.target).closest('#menu-button').length === 0) && ($(e.target).closest('#menu').length === 0)) {
+                    return _this.closeMenu();
+                }
+            };
+        })(this));
+        pixelcarveTimeline = new TimelineMax({
+            paused: true
+        });
+        pixelcarveTimeline.to('.pixelcarve-button', 0.001, {
+            zIndex: '9999999999999999999'
+        });
+        pixelcarveTimeline.to('#pixelcarve-caption', 0.001, {
+            visibility: 'visible',
+            width: '100%',
+            height: '100%',
+            force3D: true,
+            display: 'block'
+        });
+        pixelcarveTimeline.to('#pixelcarve-caption .background', 0.5, {
+            autoAlpha: 0.8,
+            force3D: true,
+            ease: Power0.easeNone
+        });
+        pixelcarveTimeline.from('#pixelcarve-caption .ani1', 0.75, {
+            opacity: 0,
+            y: '-50%',
+            scale: 0.85,
+            force3D: true,
+            ease: Power4.easeOut
+        }, '-=0.25');
+        pixelcarveTimeline.from('#pixelcarve-caption .ani2', 0.75, {
+            opacity: 0,
+            x: '-25%',
+            force3D: true,
+            delay: 0.025,
+            delay: 0.05,
+            scale: 0.85,
+            ease: Power4.easeOut
+        }, '-=0.75');
+        pixelcarveTimeline.from('#pixelcarve-caption .ani3', 0.75, {
+            opacity: 0,
+            x: '25%',
+            force3D: true,
+            scale: 0.85,
+            ease: Power4.easeOut
+        }, '-=0.75');
+        $('.pixelcarve-button').hover((function() {
+            return pixelcarveTimeline.play();
+        }), function() {
+            return pixelcarveTimeline.reverse();
+        });
+        $('#pixelcarve-caption').click(function() {
+            return pixelcarveTimeline.reverse();
+        });
+    }
+
+    Menu.prototype.openMenu = function() {
+        $('#menu-button').addClass('active');
+        $('header').addClass('menu-open');
+        this.menuTimeline.play();
+        return this.menuTimeline.timeScale(1);
+    };
+
+    Menu.prototype.closeMenu = function() {
+        $('#menu-button').removeClass('active');
+        $('header').removeClass('menu-open');
+        this.menuTimeline.reverse();
+        return this.menuTimeline.timeScale(1.5);
+    };
+
+    return Menu;
+
+})();
+

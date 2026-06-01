@@ -1,0 +1,26 @@
+import { About } from './components/About'
+import { Contact } from './components/Contact'
+import { Footer } from './components/Footer'
+import { Gallery } from './components/Gallery'
+import { Hero } from './components/Hero'
+import { Navbar } from './components/Navbar'
+import { Services } from './components/Services'
+import { WhyChoose } from './components/WhyChoose'
+import { SmoothScrollProvider } from './context/SmoothScrollContext'
+
+export default function App() {
+  return (
+    <SmoothScrollProvider>
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Gallery />
+        <WhyChoose />
+        <Contact />
+      </main>
+      <Footer />
+    </SmoothScrollProvider>
+  )
+}

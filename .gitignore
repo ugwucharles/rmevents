@@ -1,0 +1,9 @@
+node_modules
+dist
+.DS_Store
+*.local
+.env
+.tmp-drive-media
+reference-lake-como/
+site-scrape.html
+.git-commit-msg.txt
