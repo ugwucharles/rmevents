@@ -16,11 +16,11 @@ export const hero = {
   title: 'Elevate your',
   titleAccent: 'event experiences',
   subtitle:
-    'Occasions worth traveling for—composed with intention, delivered with poise. Every detail, considered.',
+    'Occasions worth traveling for, composed with intention, delivered with poise. Every detail, considered.',
   ctaPrimary: 'Begin your consultation',
   ctaSecondary: 'Explore our work',
   image: '/media/gallery/rm-01.jpg',
-  imageAlt: 'RM Events Experience — elegant celebration setting',
+  imageAlt: 'RM Events Experience, elegant celebration setting',
 }
 
 export const about = {
@@ -28,16 +28,16 @@ export const about = {
   title: 'Where vision becomes a lasting impression',
   paragraphs: [
     'At RM Events Experience, we translate your ambitions into gatherings guests remember long after the final toast. From corporate summits and destination celebrations to weddings and milestone moments, our team shapes each occasion with discernment and care.',
-    'From first concept to final farewell, we bring creativity, precision, and a genuinely personal touch—so your experience feels seamless, composed, and unmistakably yours.',
+    'From first concept to final farewell, we bring creativity, precision, and a genuinely personal touch, so your experience feels seamless, composed, and unmistakably yours.',
   ],
   image: '/media/gallery/rm-04.jpg',
-  imageAlt: 'RM Events Experience — refined event design and atmosphere',
+  imageAlt: 'RM Events Experience, refined event design and atmosphere',
 }
 
 export const servicesIntro = {
   label: 'Services',
   title: 'Celebrations of every scale',
-  lead: 'Planning should feel composed—not chaotic. We carry the details; you remain present with the people who matter most.',
+  lead: 'Planning should feel composed, not chaotic. We carry the details; you remain present with the people who matter most.',
   highlight: {
     title: 'Milestone moments, impeccably staged',
     body: 'A birthday on the horizon? An anniversary, shower, or reunion? We refine your ideas into an experience that feels effortless for you and extraordinary for your guests.',
@@ -65,25 +65,25 @@ export const serviceCategories = [
 
 /** Client photos from Drive zip — run `npm run import:media` after updating the zip */
 export const galleryImages = [
-  { src: '/media/gallery/rm-01.jpg', alt: 'RM Events — celebration atmosphere', span: 'tall' as const },
-  { src: '/media/gallery/rm-02.jpg', alt: 'RM Events — curated event styling', span: 'wide' as const },
-  { src: '/media/gallery/rm-03.jpg', alt: 'RM Events — guest experience', span: 'normal' as const },
-  { src: '/media/gallery/rm-04.jpg', alt: 'RM Events — refined tablescape', span: 'normal' as const },
-  { src: '/media/gallery/rm-05.jpg', alt: 'RM Events — destination gathering', span: 'wide' as const },
-  { src: '/media/gallery/rm-06.jpg', alt: 'RM Events — milestone celebration', span: 'tall' as const },
-  { src: '/media/gallery/rm-07.jpg', alt: 'RM Events — evening reception', span: 'normal' as const },
+  { src: '/media/gallery/rm-01.jpg', alt: 'RM Events, celebration atmosphere', span: 'tall' as const },
+  { src: '/media/gallery/rm-02.jpg', alt: 'RM Events, curated event styling', span: 'wide' as const },
+  { src: '/media/gallery/rm-03.jpg', alt: 'RM Events, guest experience', span: 'normal' as const },
+  { src: '/media/gallery/rm-04.jpg', alt: 'RM Events, refined tablescape', span: 'normal' as const },
+  { src: '/media/gallery/rm-05.jpg', alt: 'RM Events, destination gathering', span: 'wide' as const },
+  { src: '/media/gallery/rm-06.jpg', alt: 'RM Events, milestone celebration', span: 'tall' as const },
+  { src: '/media/gallery/rm-07.jpg', alt: 'RM Events, evening reception', span: 'normal' as const },
 ] as const
 
 export const whyChoose = {
   label: 'Why RM',
-  title: 'More than coordination—crafted experience',
+  title: 'More than coordination, crafted experience',
   intro:
     'When you entrust RM Events Experience, you choose a studio devoted to bringing your vision forward with creativity, precision, and quiet confidence.',
   pillars: [
     {
       title: 'Vision, refined',
       description:
-        'We listen closely, then elevate your ideas with thoughtful design—never overwhelming, always intentional.',
+        'We listen closely, then elevate your ideas with thoughtful design, never overwhelming, always intentional.',
     },
     {
       title: 'Precision in execution',
@@ -98,7 +98,7 @@ export const whyChoose = {
     {
       title: 'Memories that endure',
       description:
-        'We do not simply plan events—we compose experiences that linger in conversation and photograph alike.',
+        'We do not simply plan events. We compose experiences that linger in conversation and photograph alike.',
     },
   ],
 }

@@ -17,6 +17,7 @@ const env = {
 }
 
 try {
+  execSync('git add -A', { cwd: root, stdio: 'inherit', env })
   execSync(`git commit -F "${msgPath.replace(/\\/g, '/')}"`, { cwd: root, stdio: 'inherit', env })
 } finally {
   fs.unlinkSync(msgPath)

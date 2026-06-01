@@ -11,7 +11,7 @@ export function Gallery() {
             Moments composed with care
           </h2>
           <p style={{ marginTop: '1rem', color: 'rgba(20,20,20,0.75)' }}>
-            Placeholder imagery—swap with photos from the client Google Drive folder.
+            A selection of celebrations composed with care.
           </p>
         </FadeIn>
 

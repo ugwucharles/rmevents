@@ -49,7 +49,7 @@ export function Services() {
               color: 'rgba(247,243,236,0.55)',
             }}
           >
-            And many more—tell us what you envision.
+            And many more. Tell us what you envision.
           </p>
         </FadeIn>
       </div>

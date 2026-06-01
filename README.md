@@ -62,8 +62,7 @@ npm run preview
 ```powershell
 cd C:\Users\beenyprinting\.cursor\projects\empty-window\rm-events-landing
 
-# Replace YOUR_GITHUB_USERNAME with your GitHub username
-git remote add origin https://github.com/YOUR_GITHUB_USERNAME/rm-events-landing.git
+git remote add origin https://github.com/ugwucharles/rmevents.git
 git push -u origin main
 ```
 
