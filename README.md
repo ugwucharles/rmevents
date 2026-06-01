@@ -49,4 +49,32 @@ npm run build
 npm run preview
 ```
 
-Deploy the `dist/` folder to Vercel, Netlify, etc.
+## Deploy on Netlify (GitHub)
+
+1. Create a repo on GitHub (empty, no README), e.g. `rm-events-landing`.
+2. Push this project (see commands below).
+3. [Netlify](https://app.netlify.com) → **Add new site** → **Import an existing project** → GitHub → select the repo.
+4. Netlify reads `netlify.toml` automatically (`npm run build`, publish `dist`).
+5. After deploy, rename the site under **Domain management** (e.g. `rm-events-preview`).
+
+### Push to GitHub (first time)
+
+```powershell
+cd C:\Users\beenyprinting\.cursor\projects\empty-window\rm-events-landing
+
+# Replace YOUR_GITHUB_USERNAME with your GitHub username
+git remote add origin https://github.com/YOUR_GITHUB_USERNAME/rm-events-landing.git
+git push -u origin main
+```
+
+Sign in when Git asks (browser or Personal Access Token).
+
+### Later updates
+
+```powershell
+git add -A
+git commit -m "Describe your change"
+git push
+```
+
+Netlify redeploys automatically on each push to `main`.
