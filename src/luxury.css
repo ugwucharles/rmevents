@@ -332,8 +332,12 @@ a {
   }
 
   #menu .rm-menu__container {
-    padding: 12vh 0 0;
+    padding: 0 0 0;
     padding-left: 6vw;
+  }
+
+  #menu .rm-menu__all {
+    padding-top: 0;
   }
 }
 
@@ -557,11 +561,11 @@ a {
     gap: 1.5rem !important;
     padding: 1.75rem !important;
   }
-  
+
   .rm-card--keepsake .rm-services__video-container {
-    width: 100% !important;
-    max-width: 220px !important;
-    margin-top: 0.5rem !important;
+    width: 108% !important;
+    max-width: 240px !important;
+    margin: 0.5rem auto 0 !important;
   }
 }
 
