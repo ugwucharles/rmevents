@@ -50,11 +50,11 @@ a {
 }
 
 .rm-eyebrow {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: var(--gold);
-  font-weight: 500;
+  color: var(--gold-light);
+  font-weight: 900;
 }
 
 .rm-eyebrow--light {
@@ -125,9 +125,51 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.1rem 1.35rem;
+  padding: 0.36rem 1rem;
   max-width: var(--max-w);
   margin: 0 auto;
+}
+
+.rm-nav__logo {
+  height: 3.1rem;
+  width: auto;
+  max-width: 4.4rem;
+  object-fit: contain;
+}
+
+.rm-about-us__founder-avatar {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 1px solid rgba(196, 163, 90, 0.4);
+  background: rgba(196, 163, 90, 0.1);
+  color: var(--gold-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  pointer-events: none;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .rm-nav__inner {
+    padding: 0.33rem 1rem;
+  }
+  .rm-nav__logo {
+    height: 4.5rem;
+    max-width: 5.8rem;
+  }
+  .rm-about-us__founder-avatar {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
 }
 
 .rm-nav.is-scrolled .rm-nav__inner {
@@ -141,10 +183,18 @@ a {
 }
 
 .rm-nav__logo {
-  height: 2.75rem;
+  height: 2.8rem;
   width: auto;
-  max-width: 3.5rem;
+  max-width: 3.9rem;
   object-fit: contain;
+}
+
+/* Mobile adjustments for avatar offsets */
+@media (max-width: 768px) {
+  .rm-about-us__founder-avatar {
+    top: calc(6rem - 4px);
+    right: calc(6rem - 3px);
+  }
 }
 
 .rm-nav__menu-btn {
@@ -153,7 +203,6 @@ a {
   width: 3.1rem;
   height: 3.1rem;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.28);
   background: rgba(10, 10, 10, 0.42);
   backdrop-filter: blur(10px);
   cursor: pointer;
@@ -527,6 +576,14 @@ a {
   flex-shrink: 0;
 }
 
+.rm-tag {
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 .rm-card--keepsake {
   grid-column: span 2;
   display: flex !important;
@@ -576,35 +633,9 @@ a {
   margin: 0 auto 3rem;
 }
 
-.rm-gallery__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem;
-}
-
-.rm-gallery__item {
-  overflow: hidden;
-  position: relative;
-}
-
-.rm-gallery__item img {
-  width: 100%;
-  height: 100%;
-  min-height: 200px;
-  object-fit: cover;
-  transition: transform 0.7s var(--ease);
-}
-
-.rm-gallery__item:hover img {
-  transform: scale(1.05);
-}
-
-.rm-gallery__item--tall {
-  grid-row: span 2;
-}
-
-.rm-gallery__item--wide {
-  grid-column: span 2;
+.rm-gallery__intro h2,
+.rm-gallery__intro h3 {
+  font-weight: 700;
 }
 
 /* WHY */
@@ -621,20 +652,108 @@ a {
 
 .rm-pillar__num {
   font-family: var(--font-display);
-  font-size: 2rem;
-  color: rgba(196, 163, 90, 0.4);
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--gold);
+  opacity: 0.35;
+  margin-bottom: 0.5rem;
+  line-height: 1;
 }
 
 .rm-pillar h3 {
   font-family: var(--font-display);
-  font-size: 1.25rem;
-  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin: 0.75rem 0 0.75rem;
 }
 
 .rm-pillar p {
   margin: 0;
   font-size: 0.9rem;
   color: rgba(20, 20, 20, 0.75);
+}
+
+/* ABOUT US */
+.rm-about-us__intro {
+  text-align: center;
+  max-width: 38rem;
+  margin: 0 auto 3rem;
+}
+
+.rm-about-us__content {
+  max-width: 48rem;
+  margin: 0 auto 3rem;
+}
+
+.rm-about-us__paragraph {
+  margin: 0 0 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: rgba(247, 243, 236, 0.82);
+}
+
+.rm-about-us__founder {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2.25rem 2.5rem;
+  border: 1px solid rgba(196, 163, 90, 0.3);
+  background: rgba(255, 255, 255, 0.03);
+  position: relative;
+  overflow: hidden;
+}
+
+.rm-about-us__founder-accent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--gold);
+}
+
+.rm-about-us__founder-avatar {
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 1px solid rgba(196, 163, 90, 0.4);
+  background: rgba(196, 163, 90, 0.1);
+  color: var(--gold-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  pointer-events: none;
+}
+
+
+.rm-about-us__founder-name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gold-light);
+  margin: 0 0 0.25rem;
+}
+
+.rm-about-us__founder-role {
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(247, 243, 236, 0.55);
+  margin: 0 0 1rem;
+}
+
+.rm-about-us__founder-bio {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(247, 243, 236, 0.75);
 }
 
 /* CONTACT */
@@ -688,7 +807,7 @@ a {
 }
 
 .rm-form {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(42, 42, 42, 0.35);
   padding: 2rem;
 }
@@ -744,7 +863,7 @@ a {
 .rm-footer {
   background: var(--charcoal);
   color: var(--cream);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
   padding: 3rem 0 2rem;
 }
 
@@ -785,7 +904,7 @@ a {
 .rm-footer__bottom {
   margin-top: 2.5rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1046,4 +1165,22 @@ a {
     grid-column: span 1 !important;
   }
 }
+
+/* Consultation Modal Specific Styles */
+.rm-modal-container--consultation {
+  background: var(--charcoal) !important;
+  color: var(--cream) !important;
+  border: 1px solid rgba(196, 163, 90, 0.3) !important;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6) !important;
+  max-width: 54rem !important;
+}
+
+.rm-modal-container--consultation .rm-modal-close {
+  color: var(--cream) !important;
+}
+
+.rm-modal-container--consultation .rm-modal-close:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
 
