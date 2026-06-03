@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: ugwucharles/rmevents
   branch: main
+  site_url: https://rmevents.netlify.app
 
 local_backend: true
 
