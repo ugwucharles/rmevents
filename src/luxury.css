@@ -125,22 +125,22 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.36rem 1rem;
+  padding: calc(0.36rem + 15px) 1rem;
   max-width: var(--max-w);
   margin: 0 auto;
 }
 
 .rm-nav__logo {
-  height: 3.1rem;
+  height: 3.72rem;
   width: auto;
-  max-width: 4.4rem;
+  max-width: 5.28rem;
   object-fit: contain;
 }
 
 .rm-about-us__founder-avatar {
   position: absolute;
-  top: 3rem;
-  right: 3rem;
+  top: 0.5rem;
+  right: 0.5rem;
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
@@ -160,15 +160,15 @@ a {
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .rm-nav__inner {
-    padding: 0.33rem 1rem;
+    padding: calc(0.33rem + 7.5px) 1rem;
   }
   .rm-nav__logo {
-    height: 4.5rem;
-    max-width: 5.8rem;
+    height: 5.4rem;
+    max-width: 6.96rem;
   }
   .rm-about-us__founder-avatar {
-    top: 1.5rem;
-    right: 1.5rem;
+    top: 0.5rem;
+    right: 0.5rem;
   }
 }
 
@@ -183,9 +183,9 @@ a {
 }
 
 .rm-nav__logo {
-  height: 2.8rem;
+  height: 3.36rem;
   width: auto;
-  max-width: 3.9rem;
+  max-width: 4.68rem;
   object-fit: contain;
 }
 
@@ -195,6 +195,7 @@ a {
     top: calc(6rem - 4px);
     right: calc(6rem - 3px);
   }
+  .rm-menu__items { margin-top: -10px; }
 }
 
 .rm-nav__menu-btn {
@@ -714,8 +715,8 @@ a {
 
 .rm-about-us__founder-avatar {
   position: absolute;
-  top: 6rem;
-  right: 6rem;
+  top: 0.5rem;
+  right: 0.5rem;
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;

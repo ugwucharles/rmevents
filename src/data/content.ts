@@ -4,7 +4,7 @@ import logoImage from '../assets/logo.png'
 export const LOGO_URL = logoImage
 
 export const navLinks = [
-  { label: 'About', href: '#about' },
+  { label: 'Welcome', href: '#about' },
   { label: 'Services', href: '#services' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'Why Choose Rm', href: '#why-rm' },
