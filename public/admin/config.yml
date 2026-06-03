@@ -1,8 +1,4 @@
-backend:
-  name: github
-  repo: ugwucharles/rmevents
-  branch: main
-  site_url: https://rmevents.netlify.app
+local_backend: true
 
 media_folder: "public/media/uploads"
 public_folder: "/media/uploads"
