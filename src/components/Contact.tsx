@@ -1,9 +1,11 @@
 import { type FormEvent, useState } from 'react'
 import { FadeIn } from './FadeIn'
-import { contact, consultationUrl } from '../data/content'
+import { contact } from '../data/content'
+import { ConsultationModal } from './ConsultationModal'
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -63,9 +65,13 @@ export function Contact() {
               <a href={`mailto:${contact.email}`}>{contact.email}</a>
             </div>
             <div style={{ marginTop: '2.25rem' }}>
-              <a href={consultationUrl} target="_blank" rel="noopener noreferrer" className="rm-btn rm-btn--gold" style={{ padding: '0.8rem 1.6rem', fontSize: '0.65rem', width: 'auto', display: 'inline-flex' }}>
-                Book Consultation via Google Form
-              </a>
+              <button 
+                onClick={() => setIsModalOpen(true)}
+                className="rm-btn rm-btn--gold" 
+                style={{ padding: '0.8rem 1.6rem', fontSize: '0.65rem', width: 'auto', display: 'inline-flex', border: 'none', cursor: 'pointer' }}
+              >
+                Book Consultation
+              </button>
             </div>
           </div>
 
@@ -122,6 +128,7 @@ export function Contact() {
           )}
         </FadeIn>
       </div>
+      <ConsultationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   )
 }

@@ -7,7 +7,8 @@ export const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
   { label: 'Gallery', href: '#gallery' },
-  { label: 'Why RM', href: '#why-rm' },
+  { label: 'Why Choose Rm', href: '#why-rm' },
+  { label: 'About Us', href: '#about-us' },
   { label: 'Journal', href: '#journal' },
   { label: 'Contact', href: '#contact' },
 ] as const
@@ -200,7 +201,7 @@ export const galleryImages = [
 ] as const
 
 export const whyChoose = {
-  label: 'Why RM',
+  label: 'Why Choose Rm',
   title: 'More than coordination, crafted experience',
   intro:
     'When you entrust RM Events Experience, you choose a studio devoted to bringing your vision forward with creativity, precision, and quiet confidence.',
@@ -226,6 +227,21 @@ export const whyChoose = {
         'We do not simply plan events. We compose experiences that linger in conversation and photograph alike.',
     },
   ],
+}
+
+export const aboutUs = {
+  label: 'About Us',
+  title: 'The story behind every unforgettable event',
+  paragraphs: [
+    'RM Events Experience is a premier destination and corporate event planning studio headquartered in Dallas, Texas. We specialise in orchestrating occasions that transcend the ordinary — from milestone celebrations and destination weddings to executive retreats and large-scale conventions.',
+    'Our approach is rooted in intentionality: every timeline, vendor partnership, and design detail is calibrated to reflect each client\'s unique vision. We carry the complexity so our clients remain fully present with the people and moments that matter most.',
+    'With a portfolio spanning intimate gatherings of twenty to multi-day conventions of five hundred and beyond, we bring the same standard of excellence and personal attention to every engagement. If you can envision it, we have the expertise and creativity to bring it to life.',
+  ],
+  founder: {
+    name: 'Ranti Mafolasire',
+    role: 'CEO & Creative Director',
+    bio: 'A visionary leader with an unwavering commitment to crafting meaningful experiences, Ranti combines creative artistry with meticulous precision. Her hands-on approach and dedication to detail have established RM Events Experience as a trusted name in luxury event curation.',
+  },
 }
 
 export const contact = {

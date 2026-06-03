@@ -46,7 +46,7 @@ export function Gallery() {
             <FadeIn
               key={img.src}
               delay={0.04 * i}
-              className={`rm-gallery__item${img.span === 'tall' ? ' rm-gallery__item--tall' : ''}${img.span === 'wide' ? ' rm-gallery__item--wide' : ''}`}
+              className="rm-gallery__item"
             >
               <img src={img.src} alt={img.alt} loading="lazy" />
             </FadeIn>

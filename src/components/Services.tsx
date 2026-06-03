@@ -41,7 +41,7 @@ export function Services() {
 
         {/* Signature Enhancements */}
         <FadeIn delay={0.2} style={{ marginTop: '5rem' }}>
-          <h3 className="rm-heading" style={{ color: 'var(--gold-light)', fontSize: '1.8rem', borderBottom: '1px solid rgba(196, 163, 90, 0.2)', paddingBottom: '1rem', marginBottom: '2.5rem' }}>
+          <h3 className="rm-heading" style={{ color: 'var(--gold-light)', fontSize: '1.8rem', fontWeight: '800', borderBottom: '1px solid rgba(196, 163, 90, 0.2)', paddingBottom: '1rem', marginBottom: '2.5rem' }}>
             Signature Offerings & Keepsakes
           </h3>
           <div style={{ display: 'grid', gap: '2rem', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
@@ -60,7 +60,7 @@ export function Services() {
                   }}
                 >
                   <div className={isVideoKeepsake ? 'rm-card__text' : ''}>
-                    <span className="rm-eyebrow" style={{ fontSize: '0.6rem', color: 'var(--gold)' }}>{item.tag}</span>
+                    <span className="rm-tag">{item.tag}</span>
                     <h4 className="rm-heading" style={{ color: 'var(--cream)', fontSize: '1.5rem', marginTop: '0.5rem', marginBottom: '1rem' }}>{item.title}</h4>
                     <p style={{ color: 'rgba(247,243,236,0.7)', fontSize: '0.95rem', lineHeight: 1.6, margin: 0 }}>{item.description}</p>
                   </div>
