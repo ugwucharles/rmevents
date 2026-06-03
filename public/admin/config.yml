@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: ugwucharles/rmevents
   branch: main
 
 media_folder: "public/media/uploads"
