@@ -1,5 +1,5 @@
 import { SmoothLink } from './SmoothLink'
-import { contact, LOGO_URL, navLinks } from '../data/content'
+import { contact, LOGO_URL, navLinks, consultationUrl } from '../data/content'
 
 export function Footer() {
   const year = new Date().getFullYear()
@@ -26,6 +26,9 @@ export function Footer() {
             </a>
             <a href={`mailto:${contact.email}`} style={{ display: 'block', marginTop: '0.25rem', color: 'var(--cream)' }}>
               {contact.email}
+            </a>
+            <a href={consultationUrl} target="_blank" rel="noopener noreferrer" className="rm-btn rm-btn--outline" style={{ display: 'inline-flex', marginTop: '1rem', fontSize: '0.65rem', padding: '0.5rem 1rem' }}>
+              Book Consultation
             </a>
           </div>
         </div>

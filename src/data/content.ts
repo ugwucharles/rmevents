@@ -8,7 +8,103 @@ export const navLinks = [
   { label: 'Services', href: '#services' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'Why RM', href: '#why-rm' },
+  { label: 'Journal', href: '#journal' },
   { label: 'Contact', href: '#contact' },
+] as const
+
+export const consultationUrl = 'https://forms.gle/yYEbYRFDaReVjKRYA'
+
+export const luxuryEnhancements = [
+  {
+    title: 'Destination Weddings',
+    description: 'Transforming breathtaking backdrops into the canvas for your love story. We orchestrate comprehensive logistics, custom styling, and multi-day itinerary design for a flawless wedding experience anywhere in the world.',
+    tag: 'Bespoke Romance'
+  },
+  {
+    title: 'Destination Celebrations',
+    description: 'Milestone birthdays, family reunions, and anniversaries worth traveling for. We combine local destination logistics with immersive themed decor to compose celebrations that linger in conversation for years.',
+    tag: 'Milestones & Travel'
+  },
+  {
+    title: 'Corporate Events & Retreats',
+    description: 'Elevate your professional gatherings, brand launches, and executive retreats. We provide end-to-end logistics coordination and sophisticated styling that align with your brand identity and culture.',
+    tag: 'Corporate & Culture'
+  },
+  {
+    title: 'Bae-cation Romantic Getaways',
+    description: 'Indulge in a romantic getaway like no other with our exclusive Bae-cation service. We curate exceptional experiences in breathtaking romantic destinations.',
+    tag: 'Premium Romance'
+  },
+  {
+    title: 'Video Book Itinerary',
+    description: 'Instead of a paper schedule, our clients receive a Video Book Itinerary, a bespoke keepsake that guides them through the celebration while immersing them in the event’s story. More than an itinerary, it is an innovative way to showcase the journey with elegance.',
+    tag: 'Bespoke Keepsake',
+    videoUrl: 'https://youtube.com/shorts/-lPxg5bvLu0'
+  }
+] as const
+
+export const featuredCaseStudies = [
+  {
+    title: "NMS Ex-Boys Reunion",
+    location: "Dallas, Texas",
+    client: "NMS Ex-Boys",
+    description: "A memorable, high-energy reunion bringing together former classmates in Dallas.",
+    images: ["/media/gallery/TRA_3230.jpg"]
+  },
+  {
+    title: "Ebun's 50th Birthday",
+    location: "Cabo, Mexico",
+    client: "Ebun & Guests",
+    description: "An elegant, sun-drenched milestone 50th birthday celebration in Cabo, Mexico.",
+    images: ["https://images.unsplash.com/photo-1519167758481-83f29da8c2f3?auto=format&fit=crop&w=1200&q=80"]
+  },
+  {
+    title: "Ranti's 40th Birthday",
+    location: "Montego Bay, Jamaica",
+    client: "Ranti & Guests",
+    description: "An intimate and high-energy luxury destination birthday celebration.",
+    images: ["https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=80"]
+  },
+  {
+    title: "CAC WOSEM North America Convention",
+    location: "Sheraton Norfolk Waterside Hotel, Norfolk, Virginia",
+    client: "Youth & Adult Conventions, CAC WOSEM Worldwide",
+    guestSize: "Youth: 150, Adults: 500",
+    description: "Full-scale convention planning and destination logistics coordination.",
+    images: ["https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=80"]
+  },
+  {
+    title: "Valentine Ball",
+    location: "Sheraton Norfolk Waterside Hotel & Marriott Chesapeake Hotel, Virginia",
+    client: "Youth Ministry (Jesus and Me - JAM)",
+    guestSize: "40-50 guests",
+    description: "Exquisite and intimate themed Valentine's celebrations.",
+    images: ["https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80"]
+  }
+] as const
+
+export const blogPosts = [
+  {
+    title: "Why RM Events Excels as Your Corporate Events & Destination Planner",
+    summary: "Corporate retreats aren’t just a break from the office—they're an investment in your team. Learn how we craft retreats that spark collaboration, innovation, and team spirit.",
+    date: "May 2026",
+    link: "https://www.rmeventsexperience.com/post/corporate-event-planner",
+    readTime: "3 min read"
+  },
+  {
+    title: "Event Expectations: Aligning with the Client",
+    summary: "Successful events start with alignment. Discover our approach to capturing client visions and translating them into seamless, stress-free realities.",
+    date: "April 2026",
+    link: "https://www.rmeventsexperience.com/post/event-expectations-aligning-with-the-client",
+    readTime: "4 min read"
+  },
+  {
+    title: "Destination Event Planning: Dos and Don'ts",
+    summary: "Planning a celebration in an exotic location or historic setting? Here are the essential rules to ensure a flawless experience for you and your guests.",
+    date: "March 2026",
+    link: "https://www.rmeventsexperience.com/post/destination-event-planning-dos-and-don-ts",
+    readTime: "5 min read"
+  }
 ] as const
 
 export const hero = {
@@ -19,7 +115,7 @@ export const hero = {
     'Occasions worth traveling for, composed with intention, delivered with poise. Every detail, considered.',
   ctaPrimary: 'Begin your consultation',
   ctaSecondary: 'Explore our work',
-  image: '/media/gallery/rm-01.jpg',
+  image: '/media/gallery/TRA_3230.jpg',
   imageAlt: 'RM Events Experience, elegant celebration setting',
 }
 
@@ -30,8 +126,8 @@ export const about = {
     'At RM Events Experience, we translate your ambitions into gatherings guests remember long after the final toast. From corporate summits and destination celebrations to weddings and milestone moments, our team shapes each occasion with discernment and care.',
     'From first concept to final farewell, we bring creativity, precision, and a genuinely personal touch, so your experience feels seamless, composed, and unmistakably yours.',
   ],
-  image: '/media/gallery/rm-04.jpg',
-  imageAlt: 'RM Events Experience, refined event design and atmosphere',
+  image: '/media/gallery/TRA_3167.jpg',
+  imageAlt: 'RM Events Experience welcome section image',
 }
 
 export const servicesIntro = {
@@ -65,13 +161,42 @@ export const serviceCategories = [
 
 /** Client photos from Drive zip — run `npm run import:media` after updating the zip */
 export const galleryImages = [
-  { src: '/media/gallery/rm-01.jpg', alt: 'RM Events, celebration atmosphere', span: 'tall' as const },
-  { src: '/media/gallery/rm-02.jpg', alt: 'RM Events, curated event styling', span: 'wide' as const },
-  { src: '/media/gallery/rm-03.jpg', alt: 'RM Events, guest experience', span: 'normal' as const },
-  { src: '/media/gallery/rm-04.jpg', alt: 'RM Events, refined tablescape', span: 'normal' as const },
-  { src: '/media/gallery/rm-05.jpg', alt: 'RM Events, destination gathering', span: 'wide' as const },
-  { src: '/media/gallery/rm-06.jpg', alt: 'RM Events, milestone celebration', span: 'tall' as const },
-  { src: '/media/gallery/rm-07.jpg', alt: 'RM Events, evening reception', span: 'normal' as const },
+  {
+    src: '/media/gallery/TRA_3630.jpg',
+    alt: 'Couple seated at evening event lounge',
+    span: 'tall' as const,
+  },
+  {
+    src: '/media/gallery/WDZ_6364.jpg',
+    alt: 'Elegant outdoor event setup',
+    span: 'wide' as const,
+  },
+  {
+    src: '/media/gallery/WDZ_6465.jpg',
+    alt: 'Wedding floral arch and ceremony decor',
+    span: 'normal' as const,
+  },
+  { src: '/media/gallery/TRA_3230.jpg', alt: 'Formal reception toast', span: 'normal' as const },
+  {
+    src: '/media/gallery/WDZ_7275.jpg',
+    alt: 'Evening tablescape details',
+    span: 'wide' as const,
+  },
+  {
+    src: '/media/gallery/WDZ_6800.jpg',
+    alt: 'Garden celebration ambience',
+    span: 'tall' as const,
+  },
+  {
+    src: '/media/gallery/WDZ_6647.jpg',
+    alt: 'Floral centerpiece closeup',
+    span: 'normal' as const,
+  },
+  {
+    src: '/media/gallery/TRA_3141.jpg',
+    alt: 'Elegant celebration event',
+    span: 'wide' as const,
+  },
 ] as const
 
 export const whyChoose = {
@@ -117,9 +242,9 @@ export const contact = {
   socialNote: 'Have inquiries? You can also message us on our social media pages.',
   /* Update hrefs from Wix footer (Site → Social links) when you have exact URLs */
   social: [
-    { label: 'Instagram', href: 'https://www.instagram.com/', icon: 'instagram' },
-    { label: 'Facebook', href: 'https://www.facebook.com/', icon: 'facebook' },
-    { label: 'YouTube', href: 'https://www.youtube.com/', icon: 'youtube' },
+    { label: 'Instagram', href: 'https://www.instagram.com/rmeventsexperience', icon: 'instagram' },
+    { label: 'Facebook', href: 'https://www.facebook.com/rmeventsexperience/', icon: 'facebook' },
+    { label: 'YouTube', href: 'https://www.youtube.com/@RMEventsExperience', icon: 'youtube' },
   ],
   siteUrl: 'https://www.rmeventsexperience.com',
 }

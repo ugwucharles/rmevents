@@ -1,0 +1,43 @@
+local_backend: true
+
+backend:
+  name: git-gateway
+
+media_folder: "public/media/uploads"
+public_folder: "/media/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "string" }
+      - { label: "Read Time", name: "readTime", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "External Link (Optional)", name: "link", widget: "string", required: false, hint: "Use this if you want this card to link out to the Wix blog. Leave blank for internal posts." }
+      - { label: "Body Content (Rich Text)", name: "body", widget: "markdown", required: false, hint: "Use this to write the post text directly on the site. Highly recommended for new posts." }
+
+  - name: "case-studies"
+    label: "Case Studies"
+    folder: "src/content/case-studies"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Client", name: "client", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Guest Size (Optional)", name: "guestSize", widget: "string", required: false }
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        min: 1
+        max: 5
+        field: { label: "Image Path", name: "image", widget: "image" }

@@ -1,13 +1,39 @@
 import { type FormEvent, useState } from 'react'
 import { FadeIn } from './FadeIn'
-import { contact } from '../data/content'
+import { contact, consultationUrl } from '../data/content'
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false)
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setSubmitted(true)
+    const formData = new FormData(e.currentTarget)
+    const data = {
+      firstName: formData.get('firstName'),
+      lastName: formData.get('lastName'),
+      phone: formData.get('phone'),
+      email: formData.get('email'),
+      message: formData.get('message'),
+    }
+
+    try {
+      const response = await fetch('http://localhost:3001/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+
+      if (response.ok) {
+        setSubmitted(true)
+      } else {
+        alert('Failed to send message. Please try again.')
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      alert('Failed to send message. Please try again.')
+    }
   }
 
   return (
@@ -32,9 +58,14 @@ export function Contact() {
               <p className="rm-contact__label">Telephone</p>
               <a href={`tel:${contact.phoneTel}`}>{contact.phone}</a>
             </div>
-            <div>
+            <div style={{ marginBottom: '1.5rem' }}>
               <p className="rm-contact__label">Email</p>
               <a href={`mailto:${contact.email}`}>{contact.email}</a>
+            </div>
+            <div style={{ marginTop: '2.25rem' }}>
+              <a href={consultationUrl} target="_blank" rel="noopener noreferrer" className="rm-btn rm-btn--gold" style={{ padding: '0.8rem 1.6rem', fontSize: '0.65rem', width: 'auto', display: 'inline-flex' }}>
+                Book Consultation via Google Form
+              </a>
             </div>
           </div>
 

@@ -6,6 +6,7 @@ import { Hero } from './components/Hero'
 import { Navbar } from './components/Navbar'
 import { Services } from './components/Services'
 import { WhyChoose } from './components/WhyChoose'
+import { Journal } from './components/Journal'
 import { SmoothScrollProvider } from './context/SmoothScrollContext'
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
         <Services />
         <Gallery />
         <WhyChoose />
+        <Journal />
         <Contact />
       </main>
       <Footer />

@@ -1,12 +1,13 @@
-import { useEffect, useRef, type ReactNode } from 'react'
+import { useEffect, useRef, type ReactNode, type CSSProperties } from 'react'
 
 type FadeInProps = {
   children: ReactNode
   className?: string
   delay?: number
+  style?: CSSProperties
 }
 
-export function FadeIn({ children, className = '', delay = 0 }: FadeInProps) {
+export function FadeIn({ children, className = '', delay = 0, style }: FadeInProps) {
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -36,7 +37,7 @@ export function FadeIn({ children, className = '', delay = 0 }: FadeInProps) {
   }, [delay])
 
   return (
-    <div ref={ref} className={`rm-fade-in ${className}`.trim()}>
+    <div ref={ref} className={`rm-fade-in ${className}`.trim()} style={style}>
       {children}
     </div>
   )
