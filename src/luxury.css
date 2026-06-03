@@ -183,9 +183,9 @@ a {
 }
 
 .rm-nav__logo {
-  height: 3.36rem;
+  height: 6rem;
   width: auto;
-  max-width: 4.68rem;
+  max-width: 8rem;
   object-fit: contain;
 }
 
@@ -197,6 +197,12 @@ a {
   }
   .rm-menu__items { margin-top: -10px; }
 }
+
+  @media (min-width: 768px) {
+    .rm-menu__items {
+      margin-top: 10px;
+    }
+  }
 
 .rm-nav__menu-btn {
   position: relative;
@@ -319,6 +325,11 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+@media (min-width: 768px) {
+  .rm-menu__items {
+    padding-top: 10px;
+  }
 }
 
 #menu .rm-menu__items li {
