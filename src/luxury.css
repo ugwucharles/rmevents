@@ -177,7 +177,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: calc(0.18rem + 7.5px + 17.5px) 1rem;
+  padding: 0.36rem 1rem;
   max-width: var(--max-w);
   margin: 0 auto;
 }
@@ -247,7 +247,7 @@ a {
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .rm-nav__inner {
-    padding: calc(0.165rem + 3.75px) 1rem;
+    padding: 0.33rem 1rem;
   }
   .rm-nav__logo {
     height: 8.1rem;
