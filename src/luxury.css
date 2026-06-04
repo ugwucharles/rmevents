@@ -189,6 +189,7 @@ a {
   width: auto;
   max-width: 84rem;
   object-fit: contain;
+  margin-left: -2rem;
 }
 
 .rm-about-us__founder-avatar {
@@ -255,6 +256,7 @@ a {
   .rm-nav__logo {
     height: 300px;
     max-width: 72rem;
+    margin-left: -1.5rem;
   }
   .rm-about-us__founder-avatar {
     top: 0.5rem;
