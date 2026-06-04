@@ -19,22 +19,26 @@ export const luxuryEnhancements = [
   {
     title: 'Destination Weddings',
     description: 'Transforming breathtaking backdrops into the canvas for your love story. We orchestrate comprehensive logistics, custom styling, and multi-day itinerary design for a flawless wedding experience anywhere in the world.',
-    tag: 'Bespoke Romance'
+    tag: 'Bespoke Romance',
+    image: '/media/services/wedding.jpg'
   },
   {
     title: 'Destination Celebrations',
     description: 'Milestone birthdays, family reunions, and anniversaries worth traveling for. We combine local destination logistics with immersive themed decor to compose celebrations that linger in conversation for years.',
-    tag: 'Milestones & Travel'
+    tag: 'Milestones & Travel',
+    image: '/media/services/celebration.jpg'
   },
   {
     title: 'Corporate Events & Retreats',
     description: 'Elevate your professional gatherings, brand launches, and executive retreats. We provide end-to-end logistics coordination and sophisticated styling that align with your brand identity and culture.',
-    tag: 'Corporate & Culture'
+    tag: 'Corporate & Culture',
+    image: '/media/services/corporate-new.jpg'
   },
   {
     title: 'Bae-cation Romantic Getaways',
     description: 'Indulge in a romantic getaway like no other with our exclusive Bae-cation service. We curate exceptional experiences in breathtaking romantic destinations.',
-    tag: 'Premium Romance'
+    tag: 'Premium Romance',
+    image: '/media/services/baecation.jpg'
   },
   {
     title: 'Video Book Itinerary',
@@ -116,7 +120,7 @@ export const hero = {
     'Occasions worth traveling for, composed with intention, delivered with poise. Every detail, considered.',
   ctaPrimary: 'Begin your consultation',
   ctaSecondary: 'Explore our work',
-  image: '/media/gallery/TRA_3230.jpg',
+  image: 'http://localhost:5173/media/gallery/formal-party/formal-party-24.jpg',
   imageAlt: 'RM Events Experience, elegant celebration setting',
 }
 
@@ -127,7 +131,7 @@ export const about = {
     'At RM Events Experience, we translate your ambitions into gatherings guests remember long after the final toast. From corporate summits and destination celebrations to weddings and milestone moments, our team shapes each occasion with discernment and care.',
     'From first concept to final farewell, we bring creativity, precision, and a genuinely personal touch, so your experience feels seamless, composed, and unmistakably yours.',
   ],
-  image: '/media/gallery/TRA_3167.jpg',
+  image: '/media/gallery/formal-party/formal-party-22.jpg',
   imageAlt: 'RM Events Experience welcome section image',
 }
 
@@ -160,44 +164,281 @@ export const serviceCategories = [
   },
 ] as const
 
-/** Client photos from Drive zip — run `npm run import:media` after updating the zip */
-export const galleryImages = [
+/** Portfolio projects — grouped gallery system */
+export const portfolioProjects = [
   {
-    src: '/media/gallery/TRA_3630.jpg',
-    alt: 'Couple seated at evening event lounge',
-    span: 'tall' as const,
+    title: "Welcome Party",
+    subtitle: "A warm and vibrant beginning",
+    coverImage: "/media/gallery/welcome-party/welcome-party-01.jpg",
+    images: [
+      {
+        src: "/media/gallery/welcome-party/welcome-party-01.jpg",
+        alt: "Welcome Party image 1"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-02.jpg",
+        alt: "Welcome Party image 2"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-03.jpg",
+        alt: "Welcome Party image 3"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-04.jpg",
+        alt: "Welcome Party image 4"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-05.jpg",
+        alt: "Welcome Party image 5"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-06.jpg",
+        alt: "Welcome Party image 6"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-07.jpg",
+        alt: "Welcome Party image 7"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-08.jpg",
+        alt: "Welcome Party image 8"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-09.jpg",
+        alt: "Welcome Party image 9"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-10.jpg",
+        alt: "Welcome Party image 10"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-11.jpg",
+        alt: "Welcome Party image 11"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-12.jpg",
+        alt: "Welcome Party image 12"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-13.jpg",
+        alt: "Welcome Party image 13"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-14.jpg",
+        alt: "Welcome Party image 14"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-15.jpg",
+        alt: "Welcome Party image 15"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-16.jpg",
+        alt: "Welcome Party image 16"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-17.jpg",
+        alt: "Welcome Party image 17"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-18.jpg",
+        alt: "Welcome Party image 18"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-19.jpg",
+        alt: "Welcome Party image 19"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-20.jpg",
+        alt: "Welcome Party image 20"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-21.jpg",
+        alt: "Welcome Party image 21"
+      },
+      {
+        src: "/media/gallery/welcome-party/welcome-party-22.jpg",
+        alt: "Welcome Party image 22"
+      }
+    ]
   },
   {
-    src: '/media/gallery/WDZ_6364.jpg',
-    alt: 'Elegant outdoor event setup',
-    span: 'wide' as const,
+    title: "Formal Party",
+    subtitle: "An elegant, sophisticated evening",
+    coverImage: "/media/gallery/formal-party/formal-party-01.jpg",
+    images: [
+      {
+        src: "/media/gallery/formal-party/formal-party-01.jpg",
+        alt: "Formal Party image 1"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-02.jpg",
+        alt: "Formal Party image 2"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-03.jpg",
+        alt: "Formal Party image 3"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-04.jpg",
+        alt: "Formal Party image 4"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-05.jpg",
+        alt: "Formal Party image 5"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-06.jpg",
+        alt: "Formal Party image 6"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-07.jpg",
+        alt: "Formal Party image 7"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-08.jpg",
+        alt: "Formal Party image 8"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-09.jpg",
+        alt: "Formal Party image 9"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-10.jpg",
+        alt: "Formal Party image 10"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-11.jpg",
+        alt: "Formal Party image 11"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-12.jpg",
+        alt: "Formal Party image 12"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-13.jpg",
+        alt: "Formal Party image 13"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-14.jpg",
+        alt: "Formal Party image 14"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-15.jpg",
+        alt: "Formal Party image 15"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-16.jpg",
+        alt: "Formal Party image 16"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-17.jpg",
+        alt: "Formal Party image 17"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-18.jpg",
+        alt: "Formal Party image 18"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-19.jpg",
+        alt: "Formal Party image 19"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-20.jpg",
+        alt: "Formal Party image 20"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-21.jpg",
+        alt: "Formal Party image 21"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-22.jpg",
+        alt: "Formal Party image 22"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-23.jpg",
+        alt: "Formal Party image 23"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-24.jpg",
+        alt: "Formal Party image 24"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-25.jpg",
+        alt: "Formal Party image 25"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-26.jpg",
+        alt: "Formal Party image 26"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-27.jpg",
+        alt: "Formal Party image 27"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-28.jpg",
+        alt: "Formal Party image 28"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-29.jpg",
+        alt: "Formal Party image 29"
+      },
+      {
+        src: "/media/gallery/formal-party/formal-party-30.jpg",
+        alt: "Formal Party image 30"
+      }
+    ]
   },
   {
-    src: '/media/gallery/WDZ_6465.jpg',
-    alt: 'Wedding floral arch and ceremony decor',
-    span: 'normal' as const,
-  },
-  { src: '/media/gallery/TRA_3230.jpg', alt: 'Formal reception toast', span: 'normal' as const },
-  {
-    src: '/media/gallery/WDZ_7275.jpg',
-    alt: 'Evening tablescape details',
-    span: 'wide' as const,
-  },
-  {
-    src: '/media/gallery/WDZ_6800.jpg',
-    alt: 'Garden celebration ambience',
-    span: 'tall' as const,
-  },
-  {
-    src: '/media/gallery/WDZ_6647.jpg',
-    alt: 'Floral centerpiece closeup',
-    span: 'normal' as const,
-  },
-  {
-    src: '/media/gallery/TRA_3141.jpg',
-    alt: 'Elegant celebration event',
-    span: 'wide' as const,
-  },
+    title: "Boat Party",
+    subtitle: "An exclusive sunset cruise",
+    coverImage: "/media/gallery/boat-party/boat-party-01.jpeg",
+    images: [
+      {
+        src: "/media/gallery/boat-party/boat-party-01.jpeg",
+        alt: "Boat Party image 1"
+      },
+      {
+        src: "/media/gallery/boat-party/boat-party-02.jpg",
+        alt: "Boat Party image 2"
+      },
+      {
+        src: "/media/gallery/boat-party/boat-party-03.jpg",
+        alt: "Boat Party image 3"
+      },
+      {
+        src: "/media/gallery/boat-party/boat-party-04.jpg",
+        alt: "Boat Party image 4"
+      },
+      {
+        src: "/media/gallery/boat-party/boat-party-05.jpg",
+        alt: "Boat Party image 5"
+      },
+      {
+        src: "/media/gallery/boat-party/boat-party-06.jpg",
+        alt: "Boat Party image 6"
+      },
+      {
+        src: "/media/gallery/boat-party/boat-party-07.jpg",
+        alt: "Boat Party image 7"
+      },
+      {
+        src: "/media/gallery/boat-party/boat-party-08.jpg",
+        alt: "Boat Party image 8"
+      },
+      {
+        src: "/media/gallery/boat-party/boat-party-09.jpg",
+        alt: "Boat Party image 9"
+      },
+      {
+        src: "/media/gallery/boat-party/boat-party-10.jpg",
+        alt: "Boat Party image 10"
+      },
+      {
+        src: "/media/gallery/boat-party/boat-party-11.jpg",
+        alt: "Boat Party image 11"
+      }
+    ]
+  }
 ] as const
 
 export const whyChoose = {

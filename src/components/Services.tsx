@@ -47,25 +47,50 @@ export function Services() {
           <div style={{ display: 'grid', gap: '2rem', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
             {luxuryEnhancements.map((item) => {
               const isVideoKeepsake = 'videoUrl' in item && item.videoUrl;
+              const hasImage = 'image' in item && item.image;
               return (
                 <div
                   key={item.title}
                   className={isVideoKeepsake ? 'rm-card rm-card--keepsake' : 'rm-card'}
                   style={{
+                    position: 'relative',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'space-between',
-                    background: 'rgba(255, 255, 255, 0.01)',
-                    height: 'auto'
+                    overflow: 'hidden',
+                    minHeight: hasImage ? '340px' : 'auto',
                   }}
                 >
-                  <div className={isVideoKeepsake ? 'rm-card__text' : ''}>
+                  {/* Image sits at the bottom, behind content */}
+                  {hasImage && (
+                    <img
+                      src={(item as { image: string }).image}
+                      alt={item.title}
+                      loading="lazy"
+                      style={{
+                        position: 'absolute',
+                        bottom: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '60%',
+                        objectFit: 'cover',
+                        objectPosition: 'center',
+                        opacity: 0.35,
+                        pointerEvents: 'none',
+                        zIndex: 0,
+                        maskImage: 'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.8) 40%, black 100%)',
+                        WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.8) 40%, black 100%)',
+                      }}
+                    />
+                  )}
+                  {/* Text content sits above the image */}
+                  <div className={isVideoKeepsake ? 'rm-card__text' : ''} style={{ position: 'relative', zIndex: 1 }}>
                     <span className="rm-tag">{item.tag}</span>
                     <h4 className="rm-heading" style={{ color: 'var(--cream)', fontSize: '1.5rem', marginTop: '0.5rem', marginBottom: '1rem' }}>{item.title}</h4>
                     <p style={{ color: 'rgba(247,243,236,0.7)', fontSize: '0.95rem', lineHeight: 1.6, margin: 0 }}>{item.description}</p>
                   </div>
                   {isVideoKeepsake && (
-                    <div className="rm-services__video-container">
+                    <div className="rm-services__video-container" style={{ position: 'relative', zIndex: 1 }}>
                       <iframe
                         width="100%"
                         height="100%"

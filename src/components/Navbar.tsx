@@ -32,7 +32,7 @@ export function Navbar() {
       >
         <div className="rm-nav__inner">
           <SmoothLink href="#home" className="rm-nav__brand" onNavigate={closeMenu}>
-            <img src={LOGO_URL} alt="RM Events Experience" className="rm-nav__logo" />
+        <img src={LOGO_URL} alt="RM Events Experience" className="rm-nav__logo" loading="lazy" />
           </SmoothLink>
 
           <button

@@ -111,6 +111,58 @@ a {
   background: rgba(247, 243, 236, 0.1);
 }
 
+.form-container {
+  max-width: 400px;
+  background: #fff;
+  padding: 32px 24px;
+  font-size: 14px;
+  color: var(--charcoal);
+  border-radius: 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+.form-cancel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border: 1px solid rgba(247, 243, 236, 0.4);
+  color: var(--cream);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.35s var(--ease);
+}
+.form-cancel-btn:hover {
+  border-color: var(--cream);
+  background: rgba(247, 243, 236, 0.1);
+}
+
+.form-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.8rem;
+  border-radius: 999px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: var(--gold);
+  color: var(--charcoal);
+  border: none;
+  cursor: pointer;
+  transition: all 0.35s var(--ease);
+}
+.form-submit-btn:hover {
+  background: var(--gold-light);
+}
+
 /* NAV */
 .rm-nav {
   position: fixed;
@@ -125,13 +177,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: calc(0.36rem + 15px) 1rem;
+  padding: calc(0.18rem + 7.5px + 17.5px) 1rem;
   max-width: var(--max-w);
   margin: 0 auto;
 }
 
 .rm-nav__logo {
-  height: 3.72rem;
+  height: 1.86rem;
   width: auto;
   max-width: 5.28rem;
   object-fit: contain;
@@ -141,8 +193,8 @@ a {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: 50%;
   border: 1px solid rgba(196, 163, 90, 0.4);
   background: rgba(196, 163, 90, 0.1);
@@ -156,14 +208,48 @@ a {
   letter-spacing: 0.05em;
   pointer-events: none;
 }
+/* Desktop navigation visibility */
+@media (min-width: 768px) {
+  .rm-desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .rm-desktop-nav__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+  }
+  .rm-desktop-nav__link {
+    color: var(--cream);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s var(--ease);
+  }
+  .rm-desktop-nav__link:hover {
+    color: var(--gold-light);
+  }
+  .rm-nav__menu-btn {
+    display: none;
+  }
+}
+/* Hide desktop nav on mobile */
+@media (max-width: 767px) {
+  .rm-desktop-nav {
+    display: none;
+  }
+}
+
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .rm-nav__inner {
-    padding: calc(0.33rem + 7.5px) 1rem;
+    padding: calc(0.165rem + 3.75px) 1rem;
   }
   .rm-nav__logo {
-    height: 5.4rem;
+    height: 2.7rem;
     max-width: 6.96rem;
   }
   .rm-about-us__founder-avatar {
@@ -183,7 +269,7 @@ a {
 }
 
 .rm-nav__logo {
-  height: 6rem;
+  height: 3rem;
   width: auto;
   max-width: 8rem;
   object-fit: contain;
@@ -211,6 +297,7 @@ a {
   height: 3.1rem;
   border-radius: 50%;
   background: rgba(10, 10, 10, 0.42);
+  border: 1px solid #000;
   backdrop-filter: blur(10px);
   cursor: pointer;
   display: flex;
@@ -301,7 +388,7 @@ a {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  padding: 7em 0 5em 6vw;
+  padding: 4.5em 0 5em 6vw;
 }
 
 #menu .rm-menu__wrapper {
@@ -316,9 +403,9 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 100%;
-  padding-top: 63px;
+  padding-top: 20px;
 }
 
 #menu .rm-menu__items ul {
@@ -458,6 +545,22 @@ a {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.88);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -824,6 +927,38 @@ a {
   padding: 2rem;
 }
 
+/* Modal form styling */
+.rm-modal-form {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(42, 42, 42, 0.35);
+  padding: 2rem;
+}
+
+/* Form utility classes */
+.rm-input,
+.rm-select,
+.rm-textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--cream);
+  padding: 0.5rem 0;
+  font: inherit;
+  outline: none;
+}
+
+.rm-input:focus,
+.rm-textarea:focus,
+.rm-select:focus {
+  border-bottom-color: var(--gold);
+}
+
+.rm-radio {
+  accent-color: var(--gold);
+  margin-right: 0.5rem;
+}
+
 .rm-form label {
   display: block;
   margin-bottom: 1.25rem;
@@ -853,6 +988,31 @@ a {
 .rm-form input:focus,
 .rm-form textarea:focus {
   border-bottom-color: var(--gold);
+}
+
+/* Form utility classes */
+.rm-input,
+.rm-select,
+.rm-textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--cream);
+  padding: 0.5rem 0;
+  font: inherit;
+  outline: none;
+}
+
+.rm-input:focus,
+.rm-textarea:focus,
+.rm-select:focus {
+  border-bottom-color: var(--gold);
+}
+
+.rm-radio {
+  accent-color: var(--gold);
+  margin-right: 0.5rem;
 }
 
 .rm-form__row {
@@ -1178,21 +1338,245 @@ a {
   }
 }
 
-/* Consultation Modal Specific Styles */
+/* ============================================
+   CONSULTATION FORM — UIverse-inspired Design
+   ============================================ */
+
+/* Dark-themed consultation modal override */
 .rm-modal-container--consultation {
-  background: var(--charcoal) !important;
-  color: var(--cream) !important;
-  border: 1px solid rgba(196, 163, 90, 0.3) !important;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6) !important;
-  max-width: 54rem !important;
+  background: #1a1a1f;
+  border: 1px solid rgba(196, 163, 90, 0.15);
+  max-width: 44rem;
 }
 
 .rm-modal-container--consultation .rm-modal-close {
-  color: var(--cream) !important;
+  color: var(--cream);
+  opacity: 0.5;
 }
-
 .rm-modal-container--consultation .rm-modal-close:hover {
-  background: rgba(255, 255, 255, 0.08) !important;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.08);
 }
 
+/* Consultation Form Layout */
+.consultation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
 
+.consultation-form__header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(196, 163, 90, 0.15);
+}
+
+.consultation-form__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  color: var(--cream);
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.consultation-form__subtitle {
+  font-size: 0.88rem;
+  color: rgba(247, 243, 236, 0.5);
+  margin: 0;
+  font-weight: 300;
+}
+
+/* Section grouping */
+.consultation-form__section {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.consultation-form__section:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0;
+}
+
+.consultation-form__section-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.consultation-form__section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(196, 163, 90, 0.15);
+}
+
+/* Form grid */
+.consultation-form__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .consultation-form__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Form Group — UIverse-inspired */
+.consultation-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.consultation-form .form-group label {
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(247, 243, 236, 0.55);
+  margin-bottom: 0.15rem;
+}
+
+.consultation-form .form-group input,
+.consultation-form .form-group select,
+.consultation-form .form-group textarea {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--cream);
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.consultation-form .form-group input::placeholder,
+.consultation-form .form-group textarea::placeholder {
+  color: rgba(247, 243, 236, 0.25);
+}
+
+.consultation-form .form-group input:focus,
+.consultation-form .form-group select:focus,
+.consultation-form .form-group textarea:focus {
+  border-color: var(--gold);
+  background: rgba(196, 163, 90, 0.04);
+  box-shadow: 0 0 0 3px rgba(196, 163, 90, 0.08);
+}
+
+.consultation-form .form-group select {
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23c4a35a' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2rem;
+}
+
+.consultation-form .form-group select option {
+  background: #1a1a1f;
+  color: var(--cream);
+}
+
+.consultation-form .form-group textarea {
+  resize: vertical;
+  min-height: 4rem;
+}
+
+/* Checkbox and Radio groups */
+.consultation-form__checkbox-group,
+.consultation-form__radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.35rem;
+}
+
+.consultation-form__check-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: rgba(247, 243, 236, 0.8);
+  padding: 0.4rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.consultation-form__check-label:hover {
+  border-color: rgba(196, 163, 90, 0.4);
+  background: rgba(196, 163, 90, 0.05);
+}
+
+.consultation-form__check-label input {
+  accent-color: var(--gold);
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.consultation-form__check-label input:checked + span {
+  color: var(--gold-light);
+}
+
+/* Other text input */
+.consultation-form__other-input {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  margin-top: 0.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(196, 163, 90, 0.3);
+  border-radius: 8px;
+  color: var(--cream);
+  font-family: inherit;
+  font-size: 0.88rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.consultation-form__other-input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(196, 163, 90, 0.08);
+}
+
+.consultation-form__other-input::placeholder {
+  color: rgba(247, 243, 236, 0.25);
+}
+
+/* Action buttons */
+.consultation-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+@media (max-width: 480px) {
+  .consultation-form__actions {
+    flex-direction: column;
+  }
+  .consultation-form__actions button {
+    width: 100%;
+  }
+}

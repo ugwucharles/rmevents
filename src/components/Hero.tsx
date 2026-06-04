@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section id="home" className="rm-hero">
       <div className="rm-hero__media">
-        <img src={hero.image} alt={hero.imageAlt} fetchPriority="high" />
+        <img src={hero.image} alt={hero.imageAlt} fetchPriority="high" loading="lazy" />
         <div className="rm-hero__overlay" />
       </div>
 

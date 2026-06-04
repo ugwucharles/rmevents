@@ -1,0 +1,95 @@
+/* Case Studies Section */
+
+.case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.case-study-item {
+  background: var(--charcoal);
+  color: var(--cream);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.case-study-item h3 {
+  margin: 0 0 0.5rem;
+}
+
+.case-study-meta {
+  margin: 0.25rem 0;
+  font-size: 0.85rem;
+  color: var(--gold-light);
+}
+
+.case-study-desc {
+  margin: 0.75rem 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: rgba(247,243,236,0.85);
+}
+
+.case-study-carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.45);
+  border: none;
+  color: var(--cream);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s var(--ease);
+  z-index: 2;
+}
+
+.carousel-nav.prev { left: 0.5rem; }
+.carousel-nav.next { right: 0.5rem; }
+
+.carousel-nav:hover { background: rgba(0,0,0,0.65); }
+
+.carousel-dots {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 2;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.dot.active {
+  background: var(--gold);
+  transform: scale(1.4);
+}

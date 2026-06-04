@@ -1,126 +1,203 @@
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { FadeIn } from './FadeIn';
-import "../gallery.css";
-import { galleryImages } from '../data/content'
+import '../gallery.css';
+import { portfolioProjects } from '../data/content';
 
-interface CaseStudy {
-  title: string;
-  location: string;
-  client: string;
-  description: string;
-  images: (string | { image: string })[];
-  guestSize?: string;
-}
-
-// Helper to get image URL from both seeded and CMS-generated formats
-const getStudyImage = (study: CaseStudy): string => {
-  if (!study.images || study.images.length === 0) {
-    return 'https://images.unsplash.com/photo-1519167758481-83f29da8c2f3?auto=format&fit=crop&w=1200&q=80';
-  }
-  const first = study.images[0];
-  if (typeof first === 'string') return first;
-  return first?.image || '';
-};
-
-// Dynamically load case study JSONs from the CMS directory at build time
-const caseStudyModules = import.meta.glob<{ default: CaseStudy }>('/src/content/case-studies/*.json', { eager: true });
-const featuredCaseStudies: CaseStudy[] = Object.values(caseStudyModules).map(
-  (mod) => mod.default || mod
-);
+type Project = (typeof portfolioProjects)[number];
 
 export function Gallery() {
+  const [activeProject, setActiveProject] = useState<Project | null>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Swipe tracking
+  const touchStartX = useRef<number>(0);
+  const touchEndX = useRef<number>(0);
+
+  const openModal = (project: Project) => {
+    setActiveProject(project);
+    setCurrentIndex(0);
+    // slight delay to allow mount before triggering animation
+    requestAnimationFrame(() => setIsVisible(true));
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeModal = useCallback(() => {
+    setIsVisible(false);
+    setTimeout(() => {
+      setActiveProject(null);
+      document.body.style.overflow = '';
+    }, 350);
+  }, []);
+
+  const prev = useCallback(() => {
+    if (!activeProject) return;
+    setCurrentIndex((i) => (i - 1 + activeProject.images.length) % activeProject.images.length);
+  }, [activeProject]);
+
+  const next = useCallback(() => {
+    if (!activeProject) return;
+    setCurrentIndex((i) => (i + 1) % activeProject.images.length);
+  }, [activeProject]);
+
+  // Keyboard navigation
+  useEffect(() => {
+    if (!activeProject) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') closeModal();
+      if (e.key === 'ArrowLeft') prev();
+      if (e.key === 'ArrowRight') next();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [activeProject, closeModal, prev, next]);
+
+  // Touch / swipe handlers
+  const onTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.changedTouches[0].clientX;
+  };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    touchEndX.current = e.changedTouches[0].clientX;
+    const delta = touchStartX.current - touchEndX.current;
+    if (Math.abs(delta) > 50) {
+      delta > 0 ? next() : prev();
+    }
+  };
+
+  const images = activeProject?.images ?? [];
+
   return (
-    <section id="gallery" className="rm-section rm-section--cream-dark">
-      <div className="rm-container">
-        <FadeIn className="rm-gallery__intro">
-          <p className="rm-eyebrow">Portfolio</p>
-          <h2 className="rm-heading rm-heading-lg" style={{ marginTop: '1rem' }}>
-            Moments composed with care
-          </h2>
-          <p style={{ marginTop: '1rem', color: 'rgba(20,20,20,0.75)' }}>
-            A selection of celebrations composed with care.
-          </p>
-        </FadeIn>
-
-        <div className="rm-gallery__grid">
-          {galleryImages.map((img, i) => (
-            <FadeIn
-              key={img.src}
-              delay={0.04 * i}
-              className="rm-gallery__item"
-            >
-              <img src={img.src} alt={img.alt} loading="lazy" />
-            </FadeIn>
-          ))}
-        </div>
-
-        {/* Featured Case Studies / Signature Endeavors */}
-        <FadeIn delay={0.1} style={{ marginTop: '6rem' }}>
-          <div className="rm-gallery__intro" style={{ marginBottom: '3rem' }}>
-            <p className="rm-eyebrow">Signature Endeavors</p>
-            <h3 className="rm-heading rm-heading-lg" style={{ marginTop: '1rem' }}>
-              Featured Client Celebrations
-            </h3>
+    <>
+      <section id="gallery" className="rm-section rm-section--cream-dark">
+        <div className="rm-container">
+          <FadeIn className="rm-gallery__intro">
+            <p className="rm-eyebrow">Portfolio</p>
+            <h2 className="rm-heading rm-heading-lg" style={{ marginTop: '1rem' }}>
+              Moments composed with care
+            </h2>
             <p style={{ marginTop: '1rem', color: 'rgba(20,20,20,0.75)' }}>
-              Curated collection of exclusive experiences and destination logistics.
+              Explore our curated collection of signature events and celebrations.
             </p>
-          </div>
+          </FadeIn>
 
-          <div style={{ display: 'grid', gap: '2rem', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
-            {featuredCaseStudies.map((study, i) => (
-              <FadeIn key={study.title} delay={0.05 * i} className="rm-study-card" style={{
-                background: 'var(--cream)',
-                borderRadius: '12px',
-                overflow: 'hidden',
-                boxShadow: '0 10px 30px rgba(0,0,0,0.06)',
-                border: '1px solid rgba(20,20,20,0.05)',
-                display: 'flex',
-                flexDirection: 'column',
-                transition: 'transform 0.3s ease, box-shadow 0.3s ease'
-              }}>
-                <div style={{ height: '220px', overflow: 'hidden', position: 'relative' }}>
-                  <img src={getStudyImage(study)} alt={study.title} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }} className="rm-study-img" />
-                  <span style={{
-                    position: 'absolute',
-                    bottom: '1rem',
-                    left: '1rem',
-                    background: 'rgba(20, 20, 20, 0.75)',
-                    backdropFilter: 'blur(8px)',
-                    color: 'var(--gold-light)',
-                    fontSize: '0.65rem',
-                    padding: '0.35rem 0.75rem',
-                    borderRadius: '99px',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.1em',
-                    fontWeight: 600
-                  }}>
-                    {study.location}
-                  </span>
+          {/* Project Cards Grid */}
+          <div className="rm-portfolio__grid">
+            {portfolioProjects.map((project, i) => (
+              <FadeIn key={project.title} delay={0.08 * i} className="rm-portfolio__card">
+                <div className="rm-portfolio__cover">
+                  <img
+                    src={project.coverImage}
+                    alt={project.title}
+                    loading="lazy"
+                    className="rm-portfolio__cover-img"
+                  />
+                  <div className="rm-portfolio__cover-overlay" />
                 </div>
-                <div style={{ padding: '2rem', flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                  <div>
-                    <h4 className="rm-heading" style={{ fontSize: '1.4rem', color: 'var(--charcoal)', marginBottom: '0.75rem' }}>{study.title}</h4>
-                    <p style={{ fontSize: '0.9rem', color: 'rgba(20,20,20,0.7)', lineHeight: 1.6, marginBottom: '1.5rem' }}>{study.description}</p>
-                  </div>
-                  <div style={{
-                    borderTop: '1px solid rgba(20,20,20,0.08)',
-                    paddingTop: '1rem',
-                    fontSize: '0.8rem',
-                    color: 'rgba(20,20,20,0.6)',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '0.25rem'
-                  }}>
-                    <div><strong>Client:</strong> {study.client}</div>
-                    {'guestSize' in study && study.guestSize && (
-                      <div><strong>Guest Count:</strong> {study.guestSize}</div>
-                    )}
-                  </div>
+                <div className="rm-portfolio__card-body">
+                  <p className="rm-portfolio__card-subtitle">{project.subtitle}</p>
+                  <h3 className="rm-portfolio__card-title">{project.title}</h3>
+                  <button
+                    className="rm-portfolio__view-btn"
+                    onClick={() => openModal(project)}
+                    aria-label={`View gallery for ${project.title}`}
+                  >
+                    View Gallery
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </button>
                 </div>
               </FadeIn>
             ))}
           </div>
-        </FadeIn>
-      </div>
-    </section>
-  )
+        </div>
+      </section>
+
+      {/* Modal Overlay */}
+      {activeProject && (
+        <div
+          className={`rm-gallery-modal-overlay${isVisible ? ' rm-gallery-modal-overlay--visible' : ''}`}
+          onClick={(e) => e.target === e.currentTarget && closeModal()}
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${activeProject.title} Gallery`}
+        >
+          <div className={`rm-gallery-modal${isVisible ? ' rm-gallery-modal--visible' : ''}`}>
+            {/* Modal Header */}
+            <div className="rm-gallery-modal__header">
+              <div>
+                <p className="rm-eyebrow rm-eyebrow--light">Portfolio</p>
+                <h2 className="rm-gallery-modal__title">{activeProject.title}</h2>
+              </div>
+              <button
+                className="rm-gallery-modal__close"
+                onClick={closeModal}
+                aria-label="Close gallery"
+              >
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Carousel */}
+            <div
+              className="rm-gallery-modal__carousel"
+              onTouchStart={onTouchStart}
+              onTouchEnd={onTouchEnd}
+            >
+              <div className="rm-gallery-modal__image-wrap">
+                {images.map((img, idx) => (
+                  <img
+                    key={img.src}
+                    src={img.src}
+                    alt={img.alt}
+                    className={`rm-gallery-modal__image${idx === currentIndex ? ' rm-gallery-modal__image--active' : ''}`}
+                    loading={idx === 0 ? 'eager' : 'lazy'}
+                  />
+                ))}
+              </div>
+
+              {/* Prev / Next Buttons */}
+              {images.length > 1 && (
+                <>
+                  <button className="rm-gallery-modal__nav rm-gallery-modal__nav--prev" onClick={prev} aria-label="Previous image">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                      <path d="M14 4L7 11l7 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </button>
+                  <button className="rm-gallery-modal__nav rm-gallery-modal__nav--next" onClick={next} aria-label="Next image">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                      <path d="M8 4l7 7-7 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </button>
+                </>
+              )}
+            </div>
+
+            {/* Dot Indicators */}
+            {images.length > 1 && (
+              <div className="rm-gallery-modal__dots" role="tablist" aria-label="Image navigation">
+                {images.map((_, idx) => (
+                  <button
+                    key={idx}
+                    role="tab"
+                    aria-selected={idx === currentIndex}
+                    aria-label={`Image ${idx + 1}`}
+                    className={`rm-gallery-modal__dot${idx === currentIndex ? ' rm-gallery-modal__dot--active' : ''}`}
+                    onClick={() => setCurrentIndex(idx)}
+                  />
+                ))}
+              </div>
+            )}
+
+            {/* Counter */}
+            <p className="rm-gallery-modal__counter">
+              {currentIndex + 1} / {images.length}
+            </p>
+          </div>
+        </div>
+      )}
+    </>
+  );
 }
