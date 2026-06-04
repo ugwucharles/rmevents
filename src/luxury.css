@@ -183,9 +183,9 @@ a {
 }
 
 .rm-nav__logo {
-  height: 1.86rem;
+  height: 9rem;
   width: auto;
-  max-width: 5.28rem;
+  max-width: 24rem;
   object-fit: contain;
 }
 
@@ -250,8 +250,8 @@ a {
     padding: calc(0.165rem + 3.75px) 1rem;
   }
   .rm-nav__logo {
-    height: 2.7rem;
-    max-width: 6.96rem;
+    height: 8.1rem;
+    max-width: 20.88rem;
   }
   .rm-about-us__founder-avatar {
     top: 0.5rem;
@@ -269,12 +269,6 @@ a {
   display: block;
 }
 
-.rm-nav__logo {
-  height: 3rem;
-  width: auto;
-  max-width: 8rem;
-  object-fit: contain;
-}
 
 /* Mobile adjustments for avatar offsets */
 @media (max-width: 768px) {
