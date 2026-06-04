@@ -120,7 +120,7 @@ export const hero = {
     'Occasions worth traveling for, composed with intention, delivered with poise. Every detail, considered.',
   ctaPrimary: 'Begin your consultation',
   ctaSecondary: 'Explore our work',
-  image: 'http://localhost:5173/media/gallery/formal-party/formal-party-24.jpg',
+  image: '/media/gallery/formal-party/formal-party-24.jpg',
   imageAlt: 'RM Events Experience, elegant celebration setting',
 }
 
