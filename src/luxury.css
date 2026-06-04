@@ -185,9 +185,9 @@ a {
 }
 
 .rm-nav__logo {
-  height: 162px;
+  height: 324px;
   width: auto;
-  max-width: 42rem;
+  max-width: 84rem;
   object-fit: contain;
 }
 
@@ -253,8 +253,8 @@ a {
     height: 70px;
   }
   .rm-nav__logo {
-    height: 150px;
-    max-width: 36rem;
+    height: 300px;
+    max-width: 72rem;
   }
   .rm-about-us__founder-avatar {
     top: 0.5rem;
