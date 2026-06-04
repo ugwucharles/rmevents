@@ -1,6 +1,6 @@
 :root {
   --cream: #f7f3ec;
-  --cream-dark: #ebe4d6;
+  --cream-dark: #dcd4c3;
   --charcoal: #141414;
   --charcoal-soft: #2a2a2a;
   --gold: #c4a35a;
@@ -480,8 +480,7 @@ a {
   }
 
   #menu .rm-menu__container {
-    padding: 0 0 0;
-    padding-left: 6vw;
+    padding: 6.5rem 0 0 6vw;
   }
 
   #menu .rm-menu__all {

@@ -54,21 +54,21 @@ export const featuredCaseStudies = [
     location: "Dallas, Texas",
     client: "NMS Ex-Boys",
     description: "A memorable, high-energy reunion bringing together former classmates in Dallas.",
-    images: ["/media/gallery/TRA_3230.jpg"]
+    images: ["/media/gallery/TRA_3230.jpg", "/media/gallery/TRA_3141.jpg", "/media/gallery/TRA_3167.jpg", "/media/gallery/TRA_3630.jpg"]
   },
   {
     title: "Ebun's 50th Birthday",
     location: "Cabo, Mexico",
     client: "Ebun & Guests",
     description: "An elegant, sun-drenched milestone 50th birthday celebration in Cabo, Mexico.",
-    images: ["https://images.unsplash.com/photo-1519167758481-83f29da8c2f3?auto=format&fit=crop&w=1200&q=80"]
+    images: ["/media/gallery/WDZ_6364.jpg", "/media/gallery/WDZ_6465.jpg", "/media/gallery/WDZ_6647.jpg"]
   },
   {
     title: "Ranti's 40th Birthday",
     location: "Montego Bay, Jamaica",
     client: "Ranti & Guests",
     description: "An intimate and high-energy luxury destination birthday celebration.",
-    images: ["https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=80"]
+    images: ["/media/gallery/WDZ_6647.jpg", "/media/gallery/WDZ_6800.jpg", "/media/gallery/WDZ_7275.jpg"]
   },
   {
     title: "CAC WOSEM North America Convention",
@@ -76,7 +76,7 @@ export const featuredCaseStudies = [
     client: "Youth & Adult Conventions, CAC WOSEM Worldwide",
     guestSize: "Youth: 150, Adults: 500",
     description: "Full-scale convention planning and destination logistics coordination.",
-    images: ["https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=80"]
+    images: ["/media/gallery/WDZ_7275.jpg", "/media/gallery/TRA_3630.jpg"]
   },
   {
     title: "Valentine Ball",
@@ -84,7 +84,7 @@ export const featuredCaseStudies = [
     client: "Youth Ministry (Jesus and Me - JAM)",
     guestSize: "40-50 guests",
     description: "Exquisite and intimate themed Valentine's celebrations.",
-    images: ["https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80"]
+    images: ["/media/gallery/WDZ_6364.jpg", "/media/gallery/WDZ_6800.jpg"]
   }
 ] as const
 
@@ -131,7 +131,7 @@ export const about = {
     'At RM Events Experience, we translate your ambitions into gatherings guests remember long after the final toast. From corporate summits and destination celebrations to weddings and milestone moments, our team shapes each occasion with discernment and care.',
     'From first concept to final farewell, we bring creativity, precision, and a genuinely personal touch, so your experience feels seamless, composed, and unmistakably yours.',
   ],
-  image: '/media/gallery/formal-party/formal-party-22.jpg',
+  image: '/media/gallery/formal-party/formal-party-24.jpg',
   imageAlt: 'RM Events Experience welcome section image',
 }
 
