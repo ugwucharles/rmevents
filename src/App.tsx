@@ -20,6 +20,7 @@ export default function App() {
         <About />
         <Services />
         <Gallery />
+        <CaseStudies />
         <WhyChoose />
         <AboutUs />
         <Journal />
