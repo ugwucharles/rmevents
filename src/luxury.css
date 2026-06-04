@@ -206,7 +206,8 @@ a {
   font-size: 1.1rem;
   font-weight: 500;
   letter-spacing: 0.05em;
-  pointer-events: none;
+  pointer-events: auto;
+  cursor: pointer;
 }
 /* Desktop navigation visibility */
 @media (min-width: 768px) {
@@ -843,7 +844,8 @@ a {
   font-size: 1.1rem;
   font-weight: 500;
   letter-spacing: 0.05em;
-  pointer-events: none;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 
@@ -1511,9 +1513,9 @@ a {
   align-items: center;
   gap: 0.45rem;
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: rgba(247, 243, 236, 0.8);
-  padding: 0.4rem 0.85rem;
+  padding: 0.3rem 0.65rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 999px;
   transition: all 0.25s ease;
