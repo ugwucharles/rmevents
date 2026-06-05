@@ -8,6 +8,7 @@ import { Services } from './components/Services'
 import { WhyChoose } from './components/WhyChoose'
 import { AboutUs } from './components/AboutUs'
 import { Reviews } from './components/Reviews'
+import { SignatureEndeavours } from './components/SignatureEndeavours'
 import { Journal } from './components/Journal'
 import { SmoothScrollProvider } from './context/SmoothScrollContext'
 
@@ -20,6 +21,7 @@ export default function App() {
         <About />
         <Services />
         <Gallery />
+        <SignatureEndeavours />
         <WhyChoose />
         <AboutUs />
         <Reviews />

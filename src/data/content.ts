@@ -7,6 +7,7 @@ export const navLinks = [
   { label: 'Welcome', href: '#about' },
   { label: 'Services', href: '#services' },
   { label: 'Gallery', href: '#gallery' },
+  { label: 'Signature Endeavours', href: '#signature-endeavours' },
   { label: 'Why Choose Rm', href: '#why-rm' },
   { label: 'About Us', href: '#about-us' },
   { label: 'Reviews', href: '#reviews' },
@@ -429,6 +430,50 @@ export const testimonials = {
       role: 'MC / Host',
       text: 'RM events had an excellent attention to detail and her warm personality makes events less stressful. As a MC/host, working with a diligent, thorough planner is always a pleasure.',
       rating: 5,
+    },
+  ],
+} as const
+
+export const signatureEndeavours = {
+  label: 'Signature Endeavours',
+  title: 'Curated collection of exclusive experiences',
+  lead: 'A selection of landmark events we have had the privilege of orchestrating — each one a testament to our commitment to precision, scale, and elegance.',
+  events: [
+    {
+      name: 'CAC WOSEM North America Convention',
+      edition: 'Edition I',
+      venue: 'Sheraton Norfolk Waterside Hotel, Norfolk, Virginia',
+      guestSize: 'Youth – 150 · Adults – 500',
+      client: 'CAC WOSEM Worldwide & CAC WOSEM Norfolk, Virginia',
+      tag: 'Convention',
+      image: '/media/signature/cac-convention-1.jpg',
+    },
+    {
+      name: 'CAC WOSEM North America Convention',
+      edition: 'Edition II',
+      venue: 'Sheraton Norfolk Waterside Hotel, Norfolk, Virginia',
+      guestSize: 'Youth – 150 · Adults – 500',
+      client: 'CAC WOSEM Worldwide & CAC WOSEM Norfolk, Virginia',
+      tag: 'Convention',
+      image: '/media/signature/cac-convention-2.jpg',
+    },
+    {
+      name: 'Valentine Ball',
+      edition: 'Edition I',
+      venue: 'Sheraton Norfolk Waterside Hotel, Norfolk, Virginia',
+      guestSize: '50 Guests',
+      client: 'Youth Ministry (Jesus and Me – JAM), CAC WOSEM Norfolk, Virginia',
+      tag: 'Gala',
+      image: '/media/signature/valentine-ball-1.jpg',
+    },
+    {
+      name: 'Valentine Ball',
+      edition: 'Edition II',
+      venue: 'Marriott Chesapeake Hotel, Chesapeake, Virginia',
+      guestSize: '40 Guests',
+      client: 'Youth Ministry (Jesus and Me – JAM), CAC WOSEM Norfolk, Virginia',
+      tag: 'Gala',
+      image: '/media/signature/valentine-ball-2.jpg',
     },
   ],
 } as const
