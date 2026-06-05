@@ -48,45 +48,6 @@ export const luxuryEnhancements = [
   }
 ] as const
 
-export const featuredCaseStudies = [
-  {
-    title: "NMS Ex-Boys Reunion",
-    location: "Dallas, Texas",
-    client: "NMS Ex-Boys",
-    description: "A memorable, high-energy reunion bringing together former classmates in Dallas.",
-    images: ["/media/gallery/TRA_3230.jpg", "/media/gallery/TRA_3141.jpg", "/media/gallery/TRA_3167.jpg", "/media/gallery/TRA_3630.jpg"]
-  },
-  {
-    title: "Ebun's 50th Birthday",
-    location: "Cabo, Mexico",
-    client: "Ebun & Guests",
-    description: "An elegant, sun-drenched milestone 50th birthday celebration in Cabo, Mexico.",
-    images: ["/media/gallery/WDZ_6364.jpg", "/media/gallery/WDZ_6465.jpg", "/media/gallery/WDZ_6647.jpg"]
-  },
-  {
-    title: "Ranti's 40th Birthday",
-    location: "Montego Bay, Jamaica",
-    client: "Ranti & Guests",
-    description: "An intimate and high-energy luxury destination birthday celebration.",
-    images: ["/media/gallery/WDZ_6647.jpg", "/media/gallery/WDZ_6800.jpg", "/media/gallery/WDZ_7275.jpg"]
-  },
-  {
-    title: "CAC WOSEM North America Convention",
-    location: "Sheraton Norfolk Waterside Hotel, Norfolk, Virginia",
-    client: "Youth & Adult Conventions, CAC WOSEM Worldwide",
-    guestSize: "Youth: 150, Adults: 500",
-    description: "Full-scale convention planning and destination logistics coordination.",
-    images: ["/media/gallery/WDZ_7275.jpg", "/media/gallery/TRA_3630.jpg"]
-  },
-  {
-    title: "Valentine Ball",
-    location: "Sheraton Norfolk Waterside Hotel & Marriott Chesapeake Hotel, Virginia",
-    client: "Youth Ministry (Jesus and Me - JAM)",
-    guestSize: "40-50 guests",
-    description: "Exquisite and intimate themed Valentine's celebrations.",
-    images: ["/media/gallery/WDZ_6364.jpg", "/media/gallery/WDZ_6800.jpg"]
-  }
-] as const
 
 export const blogPosts = [
   {
@@ -164,278 +125,205 @@ export const serviceCategories = [
   },
 ] as const
 
-/** Portfolio projects — grouped gallery system */
+/** Portfolio projects — grouped gallery system with multi-day support */
 export const portfolioProjects = [
   {
-    title: "Welcome Party",
-    subtitle: "A warm and vibrant beginning",
-    coverImage: "/media/gallery/welcome-party/welcome-party-01.jpg",
-    images: [
+    title: "Ebun's 50th Birthday",
+    subtitle: "An elegant milestone celebration",
+    description: "An elegant, sun-drenched milestone 50th birthday celebration in Cabo, Mexico.",
+    location: "Cabo, Mexico",
+    client: "Ebun & Guests",
+    coverImage: "/events/EBUN 50th Birthday/Arrival/WhatsApp Image 2026-06-05 at 2.53.32 PM.jpeg",
+    days: [
       {
-        src: "/media/gallery/welcome-party/welcome-party-01.jpg",
-        alt: "Welcome Party image 1"
+        label: "Arrival",
+        title: "Arrival in Paradise",
+        images: [
+          { src: "/events/EBUN 50th Birthday/Arrival/WhatsApp Image 2026-06-05 at 2.53.32 PM (1).jpeg", alt: "Arrival image 1" },
+          { src: "/events/EBUN 50th Birthday/Arrival/WhatsApp Image 2026-06-05 at 2.53.32 PM (2).jpeg", alt: "Arrival image 2" },
+          { src: "/events/EBUN 50th Birthday/Arrival/WhatsApp Image 2026-06-05 at 2.53.32 PM.jpeg", alt: "Arrival image 3" },
+          { src: "/events/EBUN 50th Birthday/Arrival/WhatsApp Image 2026-06-05 at 2.53.33 PM (1).jpeg", alt: "Arrival image 4" },
+          { src: "/events/EBUN 50th Birthday/Arrival/WhatsApp Image 2026-06-05 at 2.53.33 PM (2).jpeg", alt: "Arrival image 5" },
+          { src: "/events/EBUN 50th Birthday/Arrival/WhatsApp Image 2026-06-05 at 2.53.33 PM (3).jpeg", alt: "Arrival image 6" },
+          { src: "/events/EBUN 50th Birthday/Arrival/WhatsApp Image 2026-06-05 at 2.53.33 PM (4).jpeg", alt: "Arrival image 7" },
+          { src: "/events/EBUN 50th Birthday/Arrival/WhatsApp Image 2026-06-05 at 2.53.33 PM.jpeg", alt: "Arrival image 8" }
+        ]
       },
       {
-        src: "/media/gallery/welcome-party/welcome-party-02.jpg",
-        alt: "Welcome Party image 2"
+        label: "Day 1",
+        title: "Meet & Greet",
+        images: [
+          { src: "/events/EBUN 50th Birthday/Day 1 (Meet & Greet)/WhatsApp Image 2026-06-05 at 2.53.34 PM (1).jpeg", alt: "Meet & Greet image 1" },
+          { src: "/events/EBUN 50th Birthday/Day 1 (Meet & Greet)/WhatsApp Image 2026-06-05 at 2.53.34 PM (2).jpeg", alt: "Meet & Greet image 2" },
+          { src: "/events/EBUN 50th Birthday/Day 1 (Meet & Greet)/WhatsApp Image 2026-06-05 at 2.53.34 PM (3).jpeg", alt: "Meet & Greet image 3" },
+          { src: "/events/EBUN 50th Birthday/Day 1 (Meet & Greet)/WhatsApp Image 2026-06-05 at 2.53.34 PM.jpeg", alt: "Meet & Greet image 4" },
+          { src: "/events/EBUN 50th Birthday/Day 1 (Meet & Greet)/WhatsApp Image 2026-06-05 at 2.53.35 PM (1).jpeg", alt: "Meet & Greet image 5" },
+          { src: "/events/EBUN 50th Birthday/Day 1 (Meet & Greet)/WhatsApp Image 2026-06-05 at 2.53.35 PM (2).jpeg", alt: "Meet & Greet image 6" },
+          { src: "/events/EBUN 50th Birthday/Day 1 (Meet & Greet)/WhatsApp Image 2026-06-05 at 2.53.35 PM (3).jpeg", alt: "Meet & Greet image 7" },
+          { src: "/events/EBUN 50th Birthday/Day 1 (Meet & Greet)/WhatsApp Image 2026-06-05 at 2.53.35 PM (4).jpeg", alt: "Meet & Greet image 8" },
+          { src: "/events/EBUN 50th Birthday/Day 1 (Meet & Greet)/WhatsApp Image 2026-06-05 at 2.53.35 PM (5).jpeg", alt: "Meet & Greet image 9" },
+          { src: "/events/EBUN 50th Birthday/Day 1 (Meet & Greet)/WhatsApp Image 2026-06-05 at 2.53.35 PM.jpeg", alt: "Meet & Greet image 10" }
+        ]
       },
       {
-        src: "/media/gallery/welcome-party/welcome-party-03.jpg",
-        alt: "Welcome Party image 3"
+        label: "Day 2",
+        title: "Welcome Cocktail",
+        images: [
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.36 PM (1).jpeg", alt: "Welcome Cocktail image 1" },
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.36 PM (2).jpeg", alt: "Welcome Cocktail image 2" },
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.36 PM.jpeg", alt: "Welcome Cocktail image 3" },
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.37 PM (1).jpeg", alt: "Welcome Cocktail image 4" },
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.37 PM (2).jpeg", alt: "Welcome Cocktail image 5" },
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.37 PM (3).jpeg", alt: "Welcome Cocktail image 6" },
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.37 PM (4).jpeg", alt: "Welcome Cocktail image 7" },
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.37 PM (5).jpeg", alt: "Welcome Cocktail image 8" },
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.37 PM.jpeg", alt: "Welcome Cocktail image 9" },
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.38 PM (1).jpeg", alt: "Welcome Cocktail image 10" },
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.38 PM (2).jpeg", alt: "Welcome Cocktail image 11" },
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.38 PM (3).jpeg", alt: "Welcome Cocktail image 12" },
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.38 PM (4).jpeg", alt: "Welcome Cocktail image 13" },
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.38 PM.jpeg", alt: "Welcome Cocktail image 14" },
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.39 PM (1).jpeg", alt: "Welcome Cocktail image 15" },
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.39 PM (2).jpeg", alt: "Welcome Cocktail image 16" },
+          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.39 PM.jpeg", alt: "Welcome Cocktail image 17" }
+        ]
       },
       {
-        src: "/media/gallery/welcome-party/welcome-party-04.jpg",
-        alt: "Welcome Party image 4"
+        label: "Day 3",
+        title: "Yatch Tour",
+        images: [
+          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.39 PM (1).jpeg", alt: "Yatch Tour image 1" },
+          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.39 PM.jpeg", alt: "Yatch Tour image 2" },
+          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.40 PM (1).jpeg", alt: "Yatch Tour image 3" },
+          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.40 PM (2).jpeg", alt: "Yatch Tour image 4" },
+          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.40 PM (3).jpeg", alt: "Yatch Tour image 5" },
+          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.40 PM (4).jpeg", alt: "Yatch Tour image 6" },
+          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.40 PM.jpeg", alt: "Yatch Tour image 7" },
+          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.41 PM (1).jpeg", alt: "Yatch Tour image 8" },
+          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.41 PM (2).jpeg", alt: "Yatch Tour image 9" },
+          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.41 PM (3).jpeg", alt: "Yatch Tour image 10" },
+          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.41 PM (4).jpeg", alt: "Yatch Tour image 11" },
+          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.41 PM.jpeg", alt: "Yatch Tour image 12" },
+          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.42 PM (1).jpeg", alt: "Yatch Tour image 13" },
+          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.42 PM (2).jpeg", alt: "Yatch Tour image 14" },
+          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.42 PM.jpeg", alt: "Yatch Tour image 15" }
+        ]
       },
       {
-        src: "/media/gallery/welcome-party/welcome-party-05.jpg",
-        alt: "Welcome Party image 5"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-06.jpg",
-        alt: "Welcome Party image 6"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-07.jpg",
-        alt: "Welcome Party image 7"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-08.jpg",
-        alt: "Welcome Party image 8"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-09.jpg",
-        alt: "Welcome Party image 9"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-10.jpg",
-        alt: "Welcome Party image 10"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-11.jpg",
-        alt: "Welcome Party image 11"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-12.jpg",
-        alt: "Welcome Party image 12"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-13.jpg",
-        alt: "Welcome Party image 13"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-14.jpg",
-        alt: "Welcome Party image 14"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-15.jpg",
-        alt: "Welcome Party image 15"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-16.jpg",
-        alt: "Welcome Party image 16"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-17.jpg",
-        alt: "Welcome Party image 17"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-18.jpg",
-        alt: "Welcome Party image 18"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-19.jpg",
-        alt: "Welcome Party image 19"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-20.jpg",
-        alt: "Welcome Party image 20"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-21.jpg",
-        alt: "Welcome Party image 21"
-      },
-      {
-        src: "/media/gallery/welcome-party/welcome-party-22.jpg",
-        alt: "Welcome Party image 22"
+        label: "Day 4",
+        title: "Birthday Dinner",
+        images: [
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.43 PM (1).jpeg", alt: "Birthday Dinner image 1" },
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.43 PM (2).jpeg", alt: "Birthday Dinner image 2" },
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.43 PM (3).jpeg", alt: "Birthday Dinner image 3" },
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.43 PM (4).jpeg", alt: "Birthday Dinner image 4" },
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.43 PM.jpeg", alt: "Birthday Dinner image 5" },
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.44 PM (1).jpeg", alt: "Birthday Dinner image 6" },
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.44 PM (2).jpeg", alt: "Birthday Dinner image 7" },
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.44 PM (3).jpeg", alt: "Birthday Dinner image 8" },
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.44 PM (4).jpeg", alt: "Birthday Dinner image 9" },
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.44 PM.jpeg", alt: "Birthday Dinner image 10" },
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.45 PM.jpeg", alt: "Birthday Dinner image 11" },
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.52 PM.jpeg", alt: "Birthday Dinner image 12" },
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.53 PM (1).jpeg", alt: "Birthday Dinner image 13" },
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.53 PM.jpeg", alt: "Birthday Dinner image 14" },
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.54 PM (1).jpeg", alt: "Birthday Dinner image 15" },
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.54 PM.jpeg", alt: "Birthday Dinner image 16" },
+          { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.55 PM.jpeg", alt: "Birthday Dinner image 17" }
+        ]
       }
     ]
   },
   {
-    title: "Formal Party",
-    subtitle: "An elegant, sophisticated evening",
-    coverImage: "/media/gallery/formal-party/formal-party-01.jpg",
-    images: [
+    title: "Ranti's 40th Birthday",
+    subtitle: "Luxury destination celebration",
+    description: "An intimate and high-energy luxury destination birthday celebration.",
+    location: "Montego Bay, Jamaica",
+    client: "Ranti & Guests",
+    coverImage: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.25 PM.jpeg",
+    days: [
       {
-        src: "/media/gallery/formal-party/formal-party-01.jpg",
-        alt: "Formal Party image 1"
+        label: "Day 1",
+        title: "Welcome Party",
+        images: [
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.25 PM (1).jpeg", alt: "Welcome Party image 1" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.25 PM.jpeg", alt: "Welcome Party image 2" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.26 PM (1).jpeg", alt: "Welcome Party image 3" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.26 PM (2).jpeg", alt: "Welcome Party image 4" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.26 PM.jpeg", alt: "Welcome Party image 5" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.27 PM.jpeg", alt: "Welcome Party image 6" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.29 PM.jpeg", alt: "Welcome Party image 7" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.30 PM.jpeg", alt: "Welcome Party image 8" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.32 PM (1).jpeg", alt: "Welcome Party image 9" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.32 PM.jpeg", alt: "Welcome Party image 10" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.35 PM.jpeg", alt: "Welcome Party image 11" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.38 PM (1).jpeg", alt: "Welcome Party image 12" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.38 PM.jpeg", alt: "Welcome Party image 13" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.39 PM (1).jpeg", alt: "Welcome Party image 14" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.39 PM.jpeg", alt: "Welcome Party image 15" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.40 PM.jpeg", alt: "Welcome Party image 16" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.42 PM (1).jpeg", alt: "Welcome Party image 17" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.42 PM.jpeg", alt: "Welcome Party image 18" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.43 PM (1).jpeg", alt: "Welcome Party image 19" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.43 PM (2).jpeg", alt: "Welcome Party image 20" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.43 PM.jpeg", alt: "Welcome Party image 21" }
+        ]
       },
       {
-        src: "/media/gallery/formal-party/formal-party-02.jpg",
-        alt: "Formal Party image 2"
+        label: "Day 2",
+        title: "Boat Party",
+        images: [
+          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.42 PM (1).jpeg", alt: "Boat Party image 1" },
+          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.42 PM.jpeg", alt: "Boat Party image 2" },
+          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.43 PM (1).jpeg", alt: "Boat Party image 3" },
+          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.43 PM.jpeg", alt: "Boat Party image 4" },
+          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.44 PM (1).jpeg", alt: "Boat Party image 5" },
+          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.44 PM.jpeg", alt: "Boat Party image 6" },
+          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.45 PM (1).jpeg", alt: "Boat Party image 7" },
+          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.45 PM.jpeg", alt: "Boat Party image 8" }
+        ]
       },
       {
-        src: "/media/gallery/formal-party/formal-party-03.jpg",
-        alt: "Formal Party image 3"
+        label: "Day 3",
+        title: "Cocktail Hour",
+        images: [
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.02 PM.jpeg", alt: "Cocktail Hour image 1" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.03 PM (1).jpeg", alt: "Cocktail Hour image 2" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.03 PM.jpeg", alt: "Cocktail Hour image 3" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.04 PM (1).jpeg", alt: "Cocktail Hour image 4" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.04 PM (2).jpeg", alt: "Cocktail Hour image 5" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.04 PM.jpeg", alt: "Cocktail Hour image 6" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.05 PM.jpeg", alt: "Cocktail Hour image 7" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.06 PM (1).jpeg", alt: "Cocktail Hour image 8" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.06 PM.jpeg", alt: "Cocktail Hour image 9" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.07 PM.jpeg", alt: "Cocktail Hour image 10" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.08 PM (1).jpeg", alt: "Cocktail Hour image 11" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.08 PM.jpeg", alt: "Cocktail Hour image 12" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.09 PM (1).jpeg", alt: "Cocktail Hour image 13" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.09 PM.jpeg", alt: "Cocktail Hour image 14" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.10 PM (1).jpeg", alt: "Cocktail Hour image 15" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.10 PM.jpeg", alt: "Cocktail Hour image 16" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.11 PM (1).jpeg", alt: "Cocktail Hour image 17" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.11 PM.jpeg", alt: "Cocktail Hour image 18" }
+        ]
       },
       {
-        src: "/media/gallery/formal-party/formal-party-04.jpg",
-        alt: "Formal Party image 4"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-05.jpg",
-        alt: "Formal Party image 5"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-06.jpg",
-        alt: "Formal Party image 6"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-07.jpg",
-        alt: "Formal Party image 7"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-08.jpg",
-        alt: "Formal Party image 8"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-09.jpg",
-        alt: "Formal Party image 9"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-10.jpg",
-        alt: "Formal Party image 10"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-11.jpg",
-        alt: "Formal Party image 11"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-12.jpg",
-        alt: "Formal Party image 12"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-13.jpg",
-        alt: "Formal Party image 13"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-14.jpg",
-        alt: "Formal Party image 14"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-15.jpg",
-        alt: "Formal Party image 15"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-16.jpg",
-        alt: "Formal Party image 16"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-17.jpg",
-        alt: "Formal Party image 17"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-18.jpg",
-        alt: "Formal Party image 18"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-19.jpg",
-        alt: "Formal Party image 19"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-20.jpg",
-        alt: "Formal Party image 20"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-21.jpg",
-        alt: "Formal Party image 21"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-22.jpg",
-        alt: "Formal Party image 22"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-23.jpg",
-        alt: "Formal Party image 23"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-24.jpg",
-        alt: "Formal Party image 24"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-25.jpg",
-        alt: "Formal Party image 25"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-26.jpg",
-        alt: "Formal Party image 26"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-27.jpg",
-        alt: "Formal Party image 27"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-28.jpg",
-        alt: "Formal Party image 28"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-29.jpg",
-        alt: "Formal Party image 29"
-      },
-      {
-        src: "/media/gallery/formal-party/formal-party-30.jpg",
-        alt: "Formal Party image 30"
-      }
-    ]
-  },
-  {
-    title: "Boat Party",
-    subtitle: "An exclusive sunset cruise",
-    coverImage: "/media/gallery/boat-party/boat-party-01.jpeg",
-    images: [
-      {
-        src: "/media/gallery/boat-party/boat-party-01.jpeg",
-        alt: "Boat Party image 1"
-      },
-      {
-        src: "/media/gallery/boat-party/boat-party-02.jpg",
-        alt: "Boat Party image 2"
-      },
-      {
-        src: "/media/gallery/boat-party/boat-party-03.jpg",
-        alt: "Boat Party image 3"
-      },
-      {
-        src: "/media/gallery/boat-party/boat-party-04.jpg",
-        alt: "Boat Party image 4"
-      },
-      {
-        src: "/media/gallery/boat-party/boat-party-05.jpg",
-        alt: "Boat Party image 5"
-      },
-      {
-        src: "/media/gallery/boat-party/boat-party-06.jpg",
-        alt: "Boat Party image 6"
-      },
-      {
-        src: "/media/gallery/boat-party/boat-party-07.jpg",
-        alt: "Boat Party image 7"
-      },
-      {
-        src: "/media/gallery/boat-party/boat-party-08.jpg",
-        alt: "Boat Party image 8"
-      },
-      {
-        src: "/media/gallery/boat-party/boat-party-09.jpg",
-        alt: "Boat Party image 9"
-      },
-      {
-        src: "/media/gallery/boat-party/boat-party-10.jpg",
-        alt: "Boat Party image 10"
-      },
-      {
-        src: "/media/gallery/boat-party/boat-party-11.jpg",
-        alt: "Boat Party image 11"
+        label: "Day 4",
+        title: "Main Event",
+        images: [
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.12 PM (1).jpeg", alt: "Main Event image 1" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.12 PM.jpeg", alt: "Main Event image 2" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.13 PM (1).jpeg", alt: "Main Event image 3" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.13 PM.jpeg", alt: "Main Event image 4" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.14 PM (1).jpeg", alt: "Main Event image 5" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.14 PM.jpeg", alt: "Main Event image 6" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.15 PM (1).jpeg", alt: "Main Event image 7" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.15 PM.jpeg", alt: "Main Event image 8" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.16 PM (1).jpeg", alt: "Main Event image 9" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.16 PM.jpeg", alt: "Main Event image 10" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.17 PM (1).jpeg", alt: "Main Event image 11" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.17 PM.jpeg", alt: "Main Event image 12" }
+        ]
       }
     ]
   }

@@ -6,7 +6,7 @@ export function WhyChoose() {
     <section id="why-rm" className="rm-section">
       <div className="rm-container">
         <FadeIn className="rm-gallery__intro">
-          <p className="rm-eyebrow">{whyChoose.label}</p>
+          <p className="rm-eyebrow rm-eyebrow--light">{whyChoose.label}</p>
           <h2 className="rm-heading rm-heading-lg" style={{ marginTop: '1rem' }}>
             {whyChoose.title}
           </h2>

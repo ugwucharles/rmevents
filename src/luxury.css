@@ -59,6 +59,8 @@ a {
 
 .rm-eyebrow--light {
   color: var(--gold-light);
+  font-weight: 400;
+  margin-bottom: 0.25rem;
 }
 
 .rm-heading {
@@ -433,7 +435,7 @@ a {
 }
 
 .rm-menu__index {
-  font-size: 0.65rem;
+  font-size: 0.5rem;
   letter-spacing: 0.22em;
   color: rgba(196, 163, 90, 0.55);
   min-width: 1.5rem;
@@ -442,7 +444,7 @@ a {
 
 .rm-menu__label {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 6vw, 3.25rem);
+  font-size: clamp(1.25rem, 4vw, 2rem);
   font-weight: 400;
   color: rgba(247, 243, 236, 0.5);
   transition: color 0.35s var(--ease);
@@ -463,7 +465,7 @@ a {
   padding: 0.95rem 2.25rem;
   border: 1px solid rgba(196, 163, 90, 0.55);
   border-radius: 999px;
-  font-size: 0.68rem;
+  font-size: 0.6rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold-light);
@@ -569,7 +571,7 @@ a {
 }
 
 .rm-hero__subtitle {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   max-width: 32rem;
   font-size: 1.05rem;
   font-weight: 300;
@@ -580,7 +582,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
 }
 
 /* SECTIONS */
@@ -1108,7 +1110,7 @@ a {
 
 @media (min-width: 768px) {
   .rm-section {
-    padding: 7rem 0;
+    padding: 4rem 0;
   }
 
   .rm-grid-4 {

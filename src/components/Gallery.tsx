@@ -7,7 +7,8 @@ type Project = (typeof portfolioProjects)[number];
 
 export function Gallery() {
   const [activeProject, setActiveProject] = useState<Project | null>(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [activeDayIndex, setActiveDayIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
 
   // Swipe tracking
@@ -16,8 +17,8 @@ export function Gallery() {
 
   const openModal = (project: Project) => {
     setActiveProject(project);
-    setCurrentIndex(0);
-    // slight delay to allow mount before triggering animation
+    setActiveDayIndex(0);
+    setCurrentImageIndex(0);
     requestAnimationFrame(() => setIsVisible(true));
     document.body.style.overflow = 'hidden';
   };
@@ -30,27 +31,35 @@ export function Gallery() {
     }, 350);
   }, []);
 
-  const prev = useCallback(() => {
-    if (!activeProject) return;
-    setCurrentIndex((i) => (i - 1 + activeProject.images.length) % activeProject.images.length);
-  }, [activeProject]);
+  const currentDay = activeProject?.days[activeDayIndex];
+  const currentImages = currentDay?.images ?? [];
 
-  const next = useCallback(() => {
-    if (!activeProject) return;
-    setCurrentIndex((i) => (i + 1) % activeProject.images.length);
-  }, [activeProject]);
+  const prevImage = useCallback(() => {
+    if (currentImages.length <= 1) return;
+    setCurrentImageIndex((i) => (i - 1 + currentImages.length) % currentImages.length);
+  }, [currentImages.length]);
+
+  const nextImage = useCallback(() => {
+    if (currentImages.length <= 1) return;
+    setCurrentImageIndex((i) => (i + 1) % currentImages.length);
+  }, [currentImages.length]);
+
+  const goToDay = useCallback((dayIndex: number) => {
+    setActiveDayIndex(dayIndex);
+    setCurrentImageIndex(0);
+  }, []);
 
   // Keyboard navigation
   useEffect(() => {
     if (!activeProject) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') closeModal();
-      if (e.key === 'ArrowLeft') prev();
-      if (e.key === 'ArrowRight') next();
+      if (e.key === 'ArrowLeft') prevImage();
+      if (e.key === 'ArrowRight') nextImage();
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [activeProject, closeModal, prev, next]);
+  }, [activeProject, closeModal, prevImage, nextImage]);
 
   // Touch / swipe handlers
   const onTouchStart = (e: React.TouchEvent) => {
@@ -60,18 +69,16 @@ export function Gallery() {
     touchEndX.current = e.changedTouches[0].clientX;
     const delta = touchStartX.current - touchEndX.current;
     if (Math.abs(delta) > 50) {
-      delta > 0 ? next() : prev();
+      delta > 0 ? nextImage() : prevImage();
     }
   };
-
-  const images = activeProject?.images ?? [];
 
   return (
     <>
       <section id="gallery" className="rm-section rm-section--cream-dark">
         <div className="rm-container">
           <FadeIn className="rm-gallery__intro">
-            <p className="rm-eyebrow">Portfolio</p>
+            <p className="rm-eyebrow rm-eyebrow--light">Portfolio</p>
             <h2 className="rm-heading rm-heading-lg" style={{ marginTop: '1rem' }}>
               Moments composed with care
             </h2>
@@ -123,78 +130,91 @@ export function Gallery() {
           aria-label={`${activeProject.title} Gallery`}
         >
           <div className={`rm-gallery-modal${isVisible ? ' rm-gallery-modal--visible' : ''}`}>
-            {/* Modal Header */}
-            <div className="rm-gallery-modal__header">
-              <div>
-                <p className="rm-eyebrow rm-eyebrow--light">Portfolio</p>
-                <h2 className="rm-gallery-modal__title">{activeProject.title}</h2>
-              </div>
-              <button
-                className="rm-gallery-modal__close"
-                onClick={closeModal}
-                aria-label="Close gallery"
-              >
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                  <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                </svg>
-              </button>
-            </div>
-
-            {/* Carousel */}
-            <div
-              className="rm-gallery-modal__carousel"
-              onTouchStart={onTouchStart}
-              onTouchEnd={onTouchEnd}
-            >
-              <div className="rm-gallery-modal__image-wrap">
-                {images.map((img, idx) => (
-                  <img
-                    key={img.src}
-                    src={img.src}
-                    alt={img.alt}
-                    className={`rm-gallery-modal__image${idx === currentIndex ? ' rm-gallery-modal__image--active' : ''}`}
-                    loading={idx === 0 ? 'eager' : 'lazy'}
-                  />
-                ))}
+            {/* Main Content */}
+            <div className="rm-gallery-modal__main">
+              {/* Image Display */}
+              <div className="rm-gallery-modal__image-display">
+                <img
+                  src={currentImages[currentImageIndex]?.src}
+                  alt={currentImages[currentImageIndex]?.alt}
+                  className="rm-gallery-modal__main-image"
+                />
               </div>
 
-              {/* Prev / Next Buttons */}
-              {images.length > 1 && (
+              {/* Top Bar - Progress/Counter */}
+              <div className="rm-gallery-modal__top-bar">
+                <button
+                  className="rm-gallery-modal__close"
+                  onClick={closeModal}
+                  aria-label="Close gallery"
+                >
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                  </svg>
+                </button>
+                <div className="rm-gallery-modal__meta">
+                  <span className="rm-gallery-modal__progress">
+                    Day {activeDayIndex + 1} of {activeProject.days.length}
+                  </span>
+                  <span className="rm-gallery-modal__counter">
+                    {currentImageIndex + 1} / {currentImages.length}
+                  </span>
+                </div>
+              </div>
+
+              {/* Bottom Vignette - Text and Day Buttons */}
+              <div className="rm-gallery-modal__bottom-vignette">
+                <div className="rm-gallery-modal__bottom-content">
+                  <h2 className="rm-gallery-modal__title">{activeProject.title}</h2>
+                  {activeProject.location && (
+                    <p className="rm-gallery-modal__location">{activeProject.location}</p>
+                  )}
+                  {currentDay && (
+                    <p className="rm-gallery-modal__day-name">{currentDay.title}</p>
+                  )}
+
+                  {/* Day Navigation Bar */}
+                  {activeProject.days.length > 1 && (
+                    <div className="rm-gallery-modal__day-nav">
+                      {activeProject.days.map((day, idx) => (
+                        <button
+                          key={idx}
+                          className={`rm-gallery-modal__day-btn${idx === activeDayIndex ? ' rm-gallery-modal__day-btn--active' : ''}`}
+                          onClick={() => goToDay(idx)}
+                          aria-label={`View ${day.label}`}
+                          aria-current={idx === activeDayIndex ? 'true' : undefined}
+                        >
+                          {day.label}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Navigation Arrows */}
+              {currentImages.length > 1 && (
                 <>
-                  <button className="rm-gallery-modal__nav rm-gallery-modal__nav--prev" onClick={prev} aria-label="Previous image">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                      <path d="M14 4L7 11l7 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <button className="rm-gallery-modal__nav rm-gallery-modal__nav--prev" onClick={prevImage} aria-label="Previous image">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M15 19l-7-7 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </button>
-                  <button className="rm-gallery-modal__nav rm-gallery-modal__nav--next" onClick={next} aria-label="Next image">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                      <path d="M8 4l7 7-7 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <button className="rm-gallery-modal__nav rm-gallery-modal__nav--next" onClick={nextImage} aria-label="Next image">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M9 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </button>
                 </>
               )}
             </div>
 
-            {/* Dot Indicators */}
-            {images.length > 1 && (
-              <div className="rm-gallery-modal__dots" role="tablist" aria-label="Image navigation">
-                {images.map((_, idx) => (
-                  <button
-                    key={idx}
-                    role="tab"
-                    aria-selected={idx === currentIndex}
-                    aria-label={`Image ${idx + 1}`}
-                    className={`rm-gallery-modal__dot${idx === currentIndex ? ' rm-gallery-modal__dot--active' : ''}`}
-                    onClick={() => setCurrentIndex(idx)}
-                  />
-                ))}
-              </div>
-            )}
-
-            {/* Counter */}
-            <p className="rm-gallery-modal__counter">
-              {currentIndex + 1} / {images.length}
-            </p>
+            {/* Touch handlers */}
+            <div
+              className="rm-gallery-modal__touch-area"
+              onTouchStart={onTouchStart}
+              onTouchEnd={onTouchEnd}
+            />
           </div>
         </div>
       )}

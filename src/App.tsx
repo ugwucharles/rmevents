@@ -4,7 +4,6 @@ import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 import { Gallery } from './components/Gallery'
 import { Hero } from './components/Hero'
-import { CaseStudies } from './components/CaseStudies'
 import { Services } from './components/Services'
 import { WhyChoose } from './components/WhyChoose'
 import { AboutUs } from './components/AboutUs'
@@ -20,7 +19,6 @@ export default function App() {
         <About />
         <Services />
         <Gallery />
-        <CaseStudies />
         <WhyChoose />
         <AboutUs />
         <Journal />

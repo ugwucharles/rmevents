@@ -82,7 +82,7 @@ export function Journal() {
     <section id="journal" className="rm-section rm-section--cream-dark" style={{ borderTop: '1px solid rgba(20,20,20,0.05)' }}>
       <div className="rm-container">
         <FadeIn className="rm-gallery__intro" style={{ marginBottom: '3.5rem', textAlign: 'center' }}>
-          <p className="rm-eyebrow">Journal & Insights</p>
+          <p className="rm-eyebrow rm-eyebrow--light">Journal & Insights</p>
           <h2 className="rm-heading rm-heading-lg" style={{ marginTop: '1rem' }}>
             Latest from the RM Blog
           </h2>
