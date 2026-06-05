@@ -446,7 +446,7 @@ export const signatureEndeavours = {
       guestSize: 'Youth – 150 · Adults – 500',
       client: 'CAC WOSEM Worldwide & CAC WOSEM Norfolk, Virginia',
       tag: 'Convention',
-      image: '/media/signature/cac-convention-1.jpg',
+      image: '/media/signature/sheraton.jpg',
     },
     {
       name: 'CAC WOSEM North America Convention',
@@ -455,7 +455,7 @@ export const signatureEndeavours = {
       guestSize: 'Youth – 150 · Adults – 500',
       client: 'CAC WOSEM Worldwide & CAC WOSEM Norfolk, Virginia',
       tag: 'Convention',
-      image: '/media/signature/cac-convention-2.jpg',
+      image: '/media/signature/sheraton-2.jpg',
     },
     {
       name: 'Valentine Ball',
@@ -464,7 +464,7 @@ export const signatureEndeavours = {
       guestSize: '50 Guests',
       client: 'Youth Ministry (Jesus and Me – JAM), CAC WOSEM Norfolk, Virginia',
       tag: 'Gala',
-      image: '/media/signature/valentine-ball-1.jpg',
+      image: '/media/signature/sheraton-3.jpg',
     },
     {
       name: 'Valentine Ball',
@@ -473,7 +473,7 @@ export const signatureEndeavours = {
       guestSize: '40 Guests',
       client: 'Youth Ministry (Jesus and Me – JAM), CAC WOSEM Norfolk, Virginia',
       tag: 'Gala',
-      image: '/media/signature/valentine-ball-2.jpg',
+      image: '/media/signature/marriott.avif',
     },
   ],
 } as const
