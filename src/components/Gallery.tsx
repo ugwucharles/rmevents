@@ -82,7 +82,7 @@ export function Gallery() {
             <h2 className="rm-heading rm-heading-lg" style={{ marginTop: '1rem' }}>
               Moments composed with care
             </h2>
-            <p style={{ marginTop: '1rem', color: 'rgba(20,20,20,0.75)' }}>
+            <p style={{ marginTop: '1rem', color: 'var(--charcoal)', opacity: 0.9 }}>
               Explore our curated collection of signature events and celebrations.
             </p>
           </FadeIn>

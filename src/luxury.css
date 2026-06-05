@@ -5,6 +5,7 @@
   --charcoal-soft: #2a2a2a;
   --gold: #c4a35a;
   --gold-light: #d4bc7a;
+  --gold-dark: #7a5d1c;
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Outfit', system-ui, sans-serif;
   --max-w: 80rem;
@@ -31,6 +32,7 @@ body {
   background: var(--cream);
   color: var(--charcoal);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
 }
 
@@ -49,6 +51,7 @@ a {
   margin-inline: auto;
 }
 
+/* TYPOGRAPHY */
 .rm-eyebrow {
   font-size: 0.85rem;
   letter-spacing: 0.35em;
@@ -61,6 +64,13 @@ a {
   color: var(--gold-light);
   font-weight: 400;
   margin-bottom: 0.25rem;
+}
+
+/* Contrast adjustment for eyebrows on light section backgrounds */
+.rm-section:not(.rm-section--dark) .rm-eyebrow,
+.rm-section:not(.rm-section--dark) .rm-eyebrow--light {
+  color: var(--gold-dark);
+  font-weight: 550;
 }
 
 .rm-heading {
@@ -461,7 +471,8 @@ a {
 }
 
 .rm-menu__cta {
-  margin-top: 2rem;
+  display: inline-block;
+  margin-top: 3.5rem;
   padding: 0.95rem 2.25rem;
   border: 1px solid rgba(196, 163, 90, 0.55);
   border-radius: 999px;
