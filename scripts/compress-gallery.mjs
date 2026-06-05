@@ -16,8 +16,8 @@ async function compressFile(filePath) {
 
   const before = fs.statSync(filePath).size
   
-  // Skip already-small images if they are not in gallery or services to speed up run
-  if (before < 100000 && !filePath.includes('gallery') && !filePath.includes('services')) {
+  // Skip already-small images if they are not in gallery, services, or events to speed up run
+  if (before < 100000 && !filePath.includes('gallery') && !filePath.includes('services') && !filePath.includes('events')) {
     return null
   }
 
@@ -62,8 +62,9 @@ function walkDir(dir, callback) {
 
 const filePaths = []
 walkDir(mediaDir, (p) => filePaths.push(p))
+walkDir(path.join(root, 'public/events'), (p) => filePaths.push(p))
 
-console.log(`[rm-events] Found ${filePaths.length} files in public/media. Starting compression...`)
+console.log(`[rm-events] Found ${filePaths.length} files. Starting compression...`)
 
 let totalBefore = 0
 let totalAfter = 0
