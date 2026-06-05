@@ -9,6 +9,7 @@ export const navLinks = [
   { label: 'Gallery', href: '#gallery' },
   { label: 'Why Choose Rm', href: '#why-rm' },
   { label: 'About Us', href: '#about-us' },
+  { label: 'Reviews', href: '#reviews' },
   { label: 'Journal', href: '#journal' },
   { label: 'Contact', href: '#contact' },
 ] as const
@@ -393,3 +394,41 @@ export const contact = {
   ],
   siteUrl: 'https://www.rmeventsexperience.com',
 }
+
+export const testimonials = {
+  label: 'Reviews',
+  title: 'Praise from our clients & partners',
+  lead: 'RM Events Experience holds a 5.0-star rating based on customer feedback. Read what our clients and vendor partners say about their experience working with us.',
+  items: [
+    {
+      author: 'Adeleke Ogunbela',
+      role: 'Client',
+      text: 'RM events planned and managed the ExBoys 2024 reunion in Dallas and it was fantastic. They did everything to ensure all attendees had memorable experiences.',
+      rating: 5,
+    },
+    {
+      author: 'Rose Frisco-Garzon',
+      role: 'Client',
+      text: 'RM Events Experience made our event smooth sailing from start to finish, the owner is very kind as well! Highly recommend for a stress-free, unforgettable event.',
+      rating: 5,
+    },
+    {
+      author: 'Michael Duru',
+      role: 'Client',
+      text: 'An extremely well organized and run event, by a very professional and detail-oriented Event planner. RM events was meticulous in their attention to detail.',
+      rating: 5,
+    },
+    {
+      author: 'DJ MIKEONZ',
+      role: 'Fellow Vendor',
+      text: 'Working with RM Events Experience as a fellow vendor was an absolute pleasure. Her team\'s exceptional communication and meticulous planning made the event a huge success.',
+      rating: 5,
+    },
+    {
+      author: 'Funmi The Host',
+      role: 'MC / Host',
+      text: 'RM events had an excellent attention to detail and her warm personality makes events less stressful. As a MC/host, working with a diligent, thorough planner is always a pleasure.',
+      rating: 5,
+    },
+  ],
+} as const
