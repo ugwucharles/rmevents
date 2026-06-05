@@ -445,7 +445,6 @@ export const signatureEndeavours = {
       venue: 'Sheraton Norfolk Waterside Hotel, Norfolk, Virginia',
       guestSize: 'Youth – 150 · Adults – 500',
       client: 'CAC WOSEM Worldwide & CAC WOSEM Norfolk, Virginia',
-      tag: 'Convention',
       image: '/media/signature/sheraton.jpg',
     },
     {
@@ -454,7 +453,6 @@ export const signatureEndeavours = {
       venue: 'Sheraton Norfolk Waterside Hotel, Norfolk, Virginia',
       guestSize: 'Youth – 150 · Adults – 500',
       client: 'CAC WOSEM Worldwide & CAC WOSEM Norfolk, Virginia',
-      tag: 'Convention',
       image: '/media/signature/sheraton-2.jpg',
     },
     {
@@ -463,7 +461,6 @@ export const signatureEndeavours = {
       venue: 'Sheraton Norfolk Waterside Hotel, Norfolk, Virginia',
       guestSize: '50 Guests',
       client: 'Youth Ministry (Jesus and Me – JAM), CAC WOSEM Norfolk, Virginia',
-      tag: 'Gala',
       image: '/media/signature/sheraton-3.jpg',
     },
     {
@@ -472,7 +469,6 @@ export const signatureEndeavours = {
       venue: 'Marriott Chesapeake Hotel, Chesapeake, Virginia',
       guestSize: '40 Guests',
       client: 'Youth Ministry (Jesus and Me – JAM), CAC WOSEM Norfolk, Virginia',
-      tag: 'Gala',
       image: '/media/signature/marriott.avif',
     },
   ],
