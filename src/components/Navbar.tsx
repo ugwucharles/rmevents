@@ -31,7 +31,7 @@ export function Navbar() {
         className={`rm-nav${scrolled ? ' is-scrolled' : ''}${open ? ' is-open menu-open' : ''}`}
       >
         <div className="rm-nav__inner">
-          <SmoothLink href="#home" className="rm-nav__brand" onNavigate={closeMenu}>
+          <SmoothLink href="#home" className="rm-nav__brand" onNavigate={closeMenu} style={{ pointerEvents: open ? 'none' : 'auto' }}>
         <img src={LOGO_URL} alt="RM Events Experience" className="rm-nav__logo" loading="lazy" />
           </SmoothLink>
 

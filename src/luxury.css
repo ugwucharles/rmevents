@@ -1528,7 +1528,7 @@ a {
   }
   
   .consultation-form__check-label {
-    width: 100%;
+    justify-content: flex-start;
   }
 }
 
