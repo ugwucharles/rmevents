@@ -1520,6 +1520,18 @@ a {
   margin-top: 0.35rem;
 }
 
+@media (max-width: 767px) {
+  .consultation-form__checkbox-group,
+  .consultation-form__radio-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .consultation-form__check-label {
+    width: 100%;
+  }
+}
+
 .consultation-form__check-label {
   display: inline-flex;
   align-items: center;

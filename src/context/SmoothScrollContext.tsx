@@ -75,7 +75,8 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
       const target = document.getElementById(id)
       if (!target) return
 
-      const top = target.getBoundingClientRect().top + window.scrollY - NAV_OFFSET
+      const navOffset = window.innerWidth < 768 ? 60 : 76
+      const top = target.getBoundingClientRect().top + window.scrollY - navOffset
       const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
       if (reduceMotion) {
