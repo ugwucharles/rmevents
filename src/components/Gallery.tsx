@@ -95,6 +95,14 @@ export function Gallery() {
 
   return (
     <>
+      {/* Preload first images of all projects on mount so they open instantly */}
+      <div style={{ display: 'none' }} aria-hidden>
+        {portfolioProjects.map((p) => {
+          const firstImg = p.days[0]?.images[0]?.src;
+          return firstImg ? <img key={firstImg} src={firstImg} alt="" /> : null;
+        })}
+      </div>
+
       <section id="gallery" className="rm-section rm-section--cream-dark">
         <div className="rm-container">
           <FadeIn className="rm-gallery__intro">
@@ -149,6 +157,14 @@ export function Gallery() {
           aria-modal="true"
           aria-label={`${activeProject.title} Gallery`}
         >
+          {/* Preload adjacent images in the DOM so that next/prev transitions are instantaneous */}
+          <div style={{ display: 'none' }} aria-hidden>
+            {[-1, 1, 2, 3].map((offset) => {
+              const idx = (currentImageIndex + offset + currentImages.length) % currentImages.length;
+              const imgUrl = currentImages[idx]?.src;
+              return imgUrl ? <img key={imgUrl} src={imgUrl} alt="" /> : null;
+            })}
+          </div>
           <div className={`rm-gallery-modal${isVisible ? ' rm-gallery-modal--visible' : ''}`}>
             {/* Main Content */}
             <div className="rm-gallery-modal__main">
