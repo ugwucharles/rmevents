@@ -61,6 +61,26 @@ export function Gallery() {
     return () => window.removeEventListener('keydown', onKey);
   }, [activeProject, closeModal, prevImage, nextImage]);
 
+  // Preload adjacent images in the background to ensure instantaneous slide transitions
+  useEffect(() => {
+    if (!activeProject || currentImages.length <= 1) return;
+
+    // Preload next 2 images and the previous 1 image
+    const indicesToPreload = [
+      (currentImageIndex + 1) % currentImages.length,
+      (currentImageIndex + 2) % currentImages.length,
+      (currentImageIndex - 1 + currentImages.length) % currentImages.length
+    ];
+
+    indicesToPreload.forEach((idx) => {
+      const imgUrl = currentImages[idx]?.src;
+      if (imgUrl) {
+        const img = new Image();
+        img.src = imgUrl;
+      }
+    });
+  }, [currentImageIndex, currentImages, activeProject]);
+
   // Touch / swipe handlers
   const onTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.changedTouches[0].clientX;

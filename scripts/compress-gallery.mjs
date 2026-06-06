@@ -6,9 +6,9 @@ import sharp from 'sharp'
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const mediaDir = path.join(root, 'public/media')
 
-const HERO_MAX = 2400
-const GALLERY_MAX = 1600
-const QUALITY = 80
+const HERO_MAX = 1920
+const GALLERY_MAX = 1200
+const QUALITY = 75
 
 async function compressFile(filePath) {
   const ext = path.extname(filePath).toLowerCase()
