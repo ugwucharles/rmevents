@@ -1547,6 +1547,12 @@ a {
   user-select: none;
   white-space: normal;
   word-wrap: break-word;
+  justify-content: flex-start;
+}
+
+.consultation-form__check-label span {
+  flex: 1;
+  text-align: center;
 }
 
 .consultation-form__check-label:hover {
