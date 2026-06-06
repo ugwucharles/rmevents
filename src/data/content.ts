@@ -135,7 +135,7 @@ export const portfolioProjects = [
     description: "An elegant, sun-drenched milestone 50th birthday celebration in Cabo, Mexico.",
     location: "Cabo, Mexico",
     client: "Ebun & Guests",
-    coverImage: "/events/EBUN 50th Birthday/Arrival/WhatsApp Image 2026-06-05 at 2.53.32 PM.jpeg",
+    coverImage: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.40 PM (3).jpeg",
     days: [
       {
         label: "Arrival",
@@ -242,7 +242,7 @@ export const portfolioProjects = [
     description: "An intimate and high-energy luxury destination birthday celebration.",
     location: "Montego Bay, Jamaica",
     client: "Ranti & Guests",
-    coverImage: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.25 PM.jpeg",
+    coverImage: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.42 PM (1).jpeg",
     days: [
       {
         label: "Day 1",
@@ -325,6 +325,105 @@ export const portfolioProjects = [
           { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.16 PM.jpeg", alt: "Main Event image 10" },
           { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.17 PM (1).jpeg", alt: "Main Event image 11" },
           { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.17 PM.jpeg", alt: "Main Event image 12" }
+        ]
+      }
+    ]
+  },
+  {
+    title: "NMS EX BOYS Reunion",
+    subtitle: "A memorable reunion celebration",
+    description: "A memorable, high-energy reunion bringing together former classmates.",
+    location: "Dallas, Texas",
+    client: "NMS Ex-Boys",
+    coverImage: "/events/NMS EX BOYS/Day 1 Welcome Event/WhatsApp Image 2026-06-05 at 11.44.09 PM.jpeg",
+    days: [
+      {
+        label: "Day 1",
+        title: "Welcome Event",
+        images: [
+          { src: "/events/NMS EX BOYS/Day 1 Welcome Event/WhatsApp Image 2026-06-05 at 11.44.09 PM (1).jpeg", alt: "Welcome Event image 1" },
+          { src: "/events/NMS EX BOYS/Day 1 Welcome Event/WhatsApp Image 2026-06-05 at 11.44.09 PM (2).jpeg", alt: "Welcome Event image 2" },
+          { src: "/events/NMS EX BOYS/Day 1 Welcome Event/WhatsApp Image 2026-06-05 at 11.44.09 PM (3).jpeg", alt: "Welcome Event image 3" },
+          { src: "/events/NMS EX BOYS/Day 1 Welcome Event/WhatsApp Image 2026-06-05 at 11.44.09 PM.jpeg", alt: "Welcome Event image 4" },
+          { src: "/events/NMS EX BOYS/Day 1 Welcome Event/WhatsApp Image 2026-06-05 at 11.44.10 PM (1).jpeg", alt: "Welcome Event image 5" },
+          { src: "/events/NMS EX BOYS/Day 1 Welcome Event/WhatsApp Image 2026-06-05 at 11.44.10 PM (2).jpeg", alt: "Welcome Event image 6" },
+          { src: "/events/NMS EX BOYS/Day 1 Welcome Event/WhatsApp Image 2026-06-05 at 11.44.10 PM (3).jpeg", alt: "Welcome Event image 7" },
+          { src: "/events/NMS EX BOYS/Day 1 Welcome Event/WhatsApp Image 2026-06-05 at 11.44.10 PM (4).jpeg", alt: "Welcome Event image 8" },
+          { src: "/events/NMS EX BOYS/Day 1 Welcome Event/WhatsApp Image 2026-06-05 at 11.44.10 PM (5).jpeg", alt: "Welcome Event image 9" },
+          { src: "/events/NMS EX BOYS/Day 1 Welcome Event/WhatsApp Image 2026-06-05 at 11.44.10 PM (6).jpeg", alt: "Welcome Event image 10" },
+          { src: "/events/NMS EX BOYS/Day 1 Welcome Event/WhatsApp Image 2026-06-05 at 11.44.10 PM (7).jpeg", alt: "Welcome Event image 11" },
+          { src: "/events/NMS EX BOYS/Day 1 Welcome Event/WhatsApp Image 2026-06-05 at 11.44.10 PM.jpeg", alt: "Welcome Event image 12" },
+          { src: "/events/NMS EX BOYS/Day 1 Welcome Event/WhatsApp Image 2026-06-05 at 11.44.11 PM (1).jpeg", alt: "Welcome Event image 13" },
+          { src: "/events/NMS EX BOYS/Day 1 Welcome Event/WhatsApp Image 2026-06-05 at 11.44.11 PM.jpeg", alt: "Welcome Event image 14" }
+        ]
+      },
+      {
+        label: "Day 2",
+        title: "Diversity Night",
+        images: [
+          { src: "/events/NMS EX BOYS/Day 2 Diversity Night/WhatsApp Image 2026-06-05 at 11.49.56 PM (1).jpeg", alt: "Diversity Night image 1" },
+          { src: "/events/NMS EX BOYS/Day 2 Diversity Night/WhatsApp Image 2026-06-05 at 11.49.56 PM.jpeg", alt: "Diversity Night image 2" },
+          { src: "/events/NMS EX BOYS/Day 2 Diversity Night/WhatsApp Image 2026-06-05 at 11.49.57 PM (1).jpeg", alt: "Diversity Night image 3" },
+          { src: "/events/NMS EX BOYS/Day 2 Diversity Night/WhatsApp Image 2026-06-05 at 11.49.57 PM (2).jpeg", alt: "Diversity Night image 4" },
+          { src: "/events/NMS EX BOYS/Day 2 Diversity Night/WhatsApp Image 2026-06-05 at 11.49.57 PM (3).jpeg", alt: "Diversity Night image 5" },
+          { src: "/events/NMS EX BOYS/Day 2 Diversity Night/WhatsApp Image 2026-06-05 at 11.49.57 PM (4).jpeg", alt: "Diversity Night image 6" },
+          { src: "/events/NMS EX BOYS/Day 2 Diversity Night/WhatsApp Image 2026-06-05 at 11.49.57 PM.jpeg", alt: "Diversity Night image 7" },
+          { src: "/events/NMS EX BOYS/Day 2 Diversity Night/WhatsApp Image 2026-06-05 at 11.49.58 PM (1).jpeg", alt: "Diversity Night image 8" },
+          { src: "/events/NMS EX BOYS/Day 2 Diversity Night/WhatsApp Image 2026-06-05 at 11.49.58 PM.jpeg", alt: "Diversity Night image 9" },
+          { src: "/events/NMS EX BOYS/Day 2 Diversity Night/WhatsApp Image 2026-06-05 at 11.49.59 PM (1).jpeg", alt: "Diversity Night image 10" },
+          { src: "/events/NMS EX BOYS/Day 2 Diversity Night/WhatsApp Image 2026-06-05 at 11.49.59 PM (2).jpeg", alt: "Diversity Night image 11" },
+          { src: "/events/NMS EX BOYS/Day 2 Diversity Night/WhatsApp Image 2026-06-05 at 11.49.59 PM (3).jpeg", alt: "Diversity Night image 12" },
+          { src: "/events/NMS EX BOYS/Day 2 Diversity Night/WhatsApp Image 2026-06-05 at 11.49.59 PM (4).jpeg", alt: "Diversity Night image 13" },
+          { src: "/events/NMS EX BOYS/Day 2 Diversity Night/WhatsApp Image 2026-06-05 at 11.49.59 PM.jpeg", alt: "Diversity Night image 14" }
+        ]
+      },
+      {
+        label: "Day 3",
+        title: "Gala Night",
+        images: [
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.25 AM (1).jpeg", alt: "Gala Night image 1" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.25 AM (2).jpeg", alt: "Gala Night image 2" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.25 AM.jpeg", alt: "Gala Night image 3" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (1).jpeg", alt: "Gala Night image 4" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (2).jpeg", alt: "Gala Night image 5" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (3).jpeg", alt: "Gala Night image 6" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (4).jpeg", alt: "Gala Night image 7" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (5).jpeg", alt: "Gala Night image 8" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (6).jpeg", alt: "Gala Night image 9" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM.jpeg", alt: "Gala Night image 10" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.30 AM.jpeg", alt: "Gala Night image 11" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM (1).jpeg", alt: "Gala Night image 12" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM (2).jpeg", alt: "Gala Night image 13" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM (3).jpeg", alt: "Gala Night image 14" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM (4).jpeg", alt: "Gala Night image 15" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM.jpeg", alt: "Gala Night image 16" }
+        ]
+      },
+      {
+        label: "Day 4",
+        title: "Picnic",
+        images: [
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.15 AM.jpeg", alt: "Picnic image 1" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.18 AM (1).jpeg", alt: "Picnic image 2" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.18 AM (2).jpeg", alt: "Picnic image 3" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.18 AM.jpeg", alt: "Picnic image 4" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.19 AM.jpeg", alt: "Picnic image 5" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.20 AM (1).jpeg", alt: "Picnic image 6" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.20 AM (2).jpeg", alt: "Picnic image 7" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.20 AM (3).jpeg", alt: "Picnic image 8" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.20 AM.jpeg", alt: "Picnic image 9" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (1).jpeg", alt: "Picnic image 10" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (10).jpeg", alt: "Picnic image 11" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (11).jpeg", alt: "Picnic image 12" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (2).jpeg", alt: "Picnic image 13" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (3).jpeg", alt: "Picnic image 14" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (4).jpeg", alt: "Picnic image 15" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (5).jpeg", alt: "Picnic image 16" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (6).jpeg", alt: "Picnic image 17" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (7).jpeg", alt: "Picnic image 18" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (8).jpeg", alt: "Picnic image 19" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (9).jpeg", alt: "Picnic image 20" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM.jpeg", alt: "Picnic image 21" }
         ]
       }
     ]
