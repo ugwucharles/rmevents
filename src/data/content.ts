@@ -44,7 +44,7 @@ export const luxuryEnhancements = [
   },
   {
     title: 'Video Book Itinerary',
-    description: 'Instead of a paper schedule, our clients receive a Video Book Itinerary, a bespoke keepsake that guides them through the celebration while immersing them in the event’s story. More than an itinerary, it is an innovative way to showcase the journey with elegance.',
+    description: 'Instead of a paper schedule, we offer our clients a Video Book Itinerary, a bespoke keepsake that guides them through the celebration while immersing them in the event’s story. More than an itinerary, it is an innovative way to showcase the journey with elegance.',
     tag: 'Bespoke Keepsake',
     videoUrl: 'https://youtube.com/shorts/-lPxg5bvLu0'
   }
@@ -76,7 +76,7 @@ export const blogPosts = [
 ] as const
 
 export const hero = {
-  eyebrow: 'Corporate & destination events',
+  eyebrow: 'Destination & Corporate Events',
   title: 'Elevate your',
   titleAccent: 'event experiences',
   subtitle:
@@ -91,7 +91,7 @@ export const about = {
   label: 'Welcome',
   title: 'Where vision becomes a lasting impression',
   paragraphs: [
-    'At RM Events Experience, we translate your ambitions into gatherings guests remember long after the final toast. From corporate summits and destination celebrations to weddings and milestone moments, our team shapes each occasion with discernment and care.',
+    'At RM Events Experience, we translate your ambitions into gatherings guests remember long after the final toast. From destination events to corporate summits and celebrations to weddings and milestone moments, our team shapes each occasion with discernment and care.',
     'From first concept to final farewell, we bring creativity, precision, and a genuinely personal touch, so your experience feels seamless, composed, and unmistakably yours.',
   ],
   image: '/media/gallery/formal-party/formal-party-24.jpg',
@@ -199,8 +199,7 @@ export const portfolioProjects = [
           { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.40 PM (1).jpeg", alt: "Yatch Tour image 3" },
           { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.40 PM (2).jpeg", alt: "Yatch Tour image 4" },
           { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.40 PM (3).jpeg", alt: "Yatch Tour image 5" },
-          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.40 PM (4).jpeg", alt: "Yatch Tour image 6" },
-          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.40 PM.jpeg", alt: "Yatch Tour image 7" },
+          { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.40 PM.jpeg", alt: "Yatch Tour image 6" },
           { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.41 PM (1).jpeg", alt: "Yatch Tour image 8" },
           { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.41 PM (2).jpeg", alt: "Yatch Tour image 9" },
           { src: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.41 PM (3).jpeg", alt: "Yatch Tour image 10" },
@@ -232,99 +231,6 @@ export const portfolioProjects = [
           { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.54 PM (1).jpeg", alt: "Birthday Dinner image 15" },
           { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.54 PM.jpeg", alt: "Birthday Dinner image 16" },
           { src: "/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.55 PM.jpeg", alt: "Birthday Dinner image 17" }
-        ]
-      }
-    ]
-  },
-  {
-    title: "Ranti's 40th Birthday",
-    subtitle: "Luxury destination celebration",
-    description: "An intimate and high-energy luxury destination birthday celebration.",
-    location: "Montego Bay, Jamaica",
-    client: "Ranti & Guests",
-    coverImage: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.42 PM (1).jpeg",
-    days: [
-      {
-        label: "Day 1",
-        title: "Welcome Party",
-        images: [
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.25 PM (1).jpeg", alt: "Welcome Party image 1" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.25 PM.jpeg", alt: "Welcome Party image 2" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.26 PM (1).jpeg", alt: "Welcome Party image 3" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.26 PM (2).jpeg", alt: "Welcome Party image 4" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.26 PM.jpeg", alt: "Welcome Party image 5" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.27 PM.jpeg", alt: "Welcome Party image 6" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.29 PM.jpeg", alt: "Welcome Party image 7" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.30 PM.jpeg", alt: "Welcome Party image 8" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.32 PM (1).jpeg", alt: "Welcome Party image 9" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.32 PM.jpeg", alt: "Welcome Party image 10" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.35 PM.jpeg", alt: "Welcome Party image 11" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.38 PM (1).jpeg", alt: "Welcome Party image 12" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.38 PM.jpeg", alt: "Welcome Party image 13" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.39 PM (1).jpeg", alt: "Welcome Party image 14" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.39 PM.jpeg", alt: "Welcome Party image 15" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.40 PM.jpeg", alt: "Welcome Party image 16" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.42 PM (1).jpeg", alt: "Welcome Party image 17" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.42 PM.jpeg", alt: "Welcome Party image 18" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.43 PM (1).jpeg", alt: "Welcome Party image 19" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.43 PM (2).jpeg", alt: "Welcome Party image 20" },
-          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.43 PM.jpeg", alt: "Welcome Party image 21" }
-        ]
-      },
-      {
-        label: "Day 2",
-        title: "Boat Party",
-        images: [
-          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.42 PM (1).jpeg", alt: "Boat Party image 1" },
-          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.42 PM.jpeg", alt: "Boat Party image 2" },
-          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.43 PM (1).jpeg", alt: "Boat Party image 3" },
-          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.43 PM.jpeg", alt: "Boat Party image 4" },
-          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.44 PM (1).jpeg", alt: "Boat Party image 5" },
-          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.44 PM.jpeg", alt: "Boat Party image 6" },
-          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.45 PM (1).jpeg", alt: "Boat Party image 7" },
-          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.45 PM.jpeg", alt: "Boat Party image 8" }
-        ]
-      },
-      {
-        label: "Day 3",
-        title: "Cocktail Hour",
-        images: [
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.02 PM.jpeg", alt: "Cocktail Hour image 1" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.03 PM (1).jpeg", alt: "Cocktail Hour image 2" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.03 PM.jpeg", alt: "Cocktail Hour image 3" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.04 PM (1).jpeg", alt: "Cocktail Hour image 4" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.04 PM (2).jpeg", alt: "Cocktail Hour image 5" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.04 PM.jpeg", alt: "Cocktail Hour image 6" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.05 PM.jpeg", alt: "Cocktail Hour image 7" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.06 PM (1).jpeg", alt: "Cocktail Hour image 8" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.06 PM.jpeg", alt: "Cocktail Hour image 9" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.07 PM.jpeg", alt: "Cocktail Hour image 10" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.08 PM (1).jpeg", alt: "Cocktail Hour image 11" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.08 PM.jpeg", alt: "Cocktail Hour image 12" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.09 PM (1).jpeg", alt: "Cocktail Hour image 13" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.09 PM.jpeg", alt: "Cocktail Hour image 14" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.10 PM (1).jpeg", alt: "Cocktail Hour image 15" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.10 PM.jpeg", alt: "Cocktail Hour image 16" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.11 PM (1).jpeg", alt: "Cocktail Hour image 17" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.11 PM.jpeg", alt: "Cocktail Hour image 18" }
-        ]
-      },
-      {
-        label: "Day 4",
-        title: "Main Event",
-        images: [
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.12 PM (1).jpeg", alt: "Main Event image 1" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.12 PM.jpeg", alt: "Main Event image 2" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.13 PM (1).jpeg", alt: "Main Event image 3" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.13 PM.jpeg", alt: "Main Event image 4" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.14 PM (1).jpeg", alt: "Main Event image 5" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.14 PM.jpeg", alt: "Main Event image 6" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.15 PM (1).jpeg", alt: "Main Event image 7" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.15 PM.jpeg", alt: "Main Event image 8" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.16 PM (1).jpeg", alt: "Main Event image 9" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.16 PM.jpeg", alt: "Main Event image 10" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.17 PM (1).jpeg", alt: "Main Event image 11" },
-          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.17 PM.jpeg", alt: "Main Event image 12" }
         ]
       }
     ]
@@ -398,32 +304,96 @@ export const portfolioProjects = [
           { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM (4).jpeg", alt: "Gala Night image 15" },
           { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM.jpeg", alt: "Gala Night image 16" }
         ]
+      }
+    ]
+  },
+  {
+    title: "Ranti's 40th Birthday",
+    subtitle: "Luxury destination celebration",
+    description: "An intimate and high-energy luxury destination birthday celebration.",
+    location: "Montego Bay, Jamaica",
+    client: "Ranti & Guests",
+    coverImage: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.42 PM (1).jpeg",
+    days: [
+      {
+        label: "Day 1",
+        title: "Welcome Party",
+        images: [
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.25 PM (1).jpeg", alt: "Welcome Party image 1" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.25 PM.jpeg", alt: "Welcome Party image 2" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.26 PM (1).jpeg", alt: "Welcome Party image 3" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.26 PM (2).jpeg", alt: "Welcome Party image 4" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.26 PM.jpeg", alt: "Welcome Party image 5" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.27 PM.jpeg", alt: "Welcome Party image 6" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.30 PM.jpeg", alt: "Welcome Party image 7" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.32 PM (1).jpeg", alt: "Welcome Party image 9" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.32 PM.jpeg", alt: "Welcome Party image 10" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.35 PM.jpeg", alt: "Welcome Party image 11" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.38 PM (1).jpeg", alt: "Welcome Party image 12" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.38 PM.jpeg", alt: "Welcome Party image 13" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.39 PM (1).jpeg", alt: "Welcome Party image 14" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.39 PM.jpeg", alt: "Welcome Party image 15" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.40 PM.jpeg", alt: "Welcome Party image 16" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.42 PM (1).jpeg", alt: "Welcome Party image 17" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.42 PM.jpeg", alt: "Welcome Party image 18" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.43 PM (1).jpeg", alt: "Welcome Party image 19" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.43 PM (2).jpeg", alt: "Welcome Party image 20" },
+          { src: "/events/Ranti's 40th Birthday/Day 1 (Welcome party)/WhatsApp Image 2026-06-05 at 3.03.43 PM.jpeg", alt: "Welcome Party image 21" }
+        ]
+      },
+      {
+        label: "Day 2",
+        title: "Boat Party",
+        images: [
+          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.42 PM (1).jpeg", alt: "Boat Party image 1" },
+          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.42 PM.jpeg", alt: "Boat Party image 2" },
+          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.43 PM (1).jpeg", alt: "Boat Party image 3" },
+          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.43 PM.jpeg", alt: "Boat Party image 4" },
+          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.44 PM (1).jpeg", alt: "Boat Party image 5" },
+          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.44 PM.jpeg", alt: "Boat Party image 6" },
+          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.45 PM (1).jpeg", alt: "Boat Party image 7" },
+          { src: "/events/Ranti's 40th Birthday/Day 2 (Boat Party)/WhatsApp Image 2026-06-05 at 3.07.45 PM.jpeg", alt: "Boat Party image 8" }
+        ]
+      },
+      {
+        label: "Day 3",
+        title: "Cocktail Hour",
+        images: [
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.02 PM.jpeg", alt: "Cocktail Hour image 1" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.03 PM (1).jpeg", alt: "Cocktail Hour image 2" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.03 PM.jpeg", alt: "Cocktail Hour image 3" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.04 PM (2).jpeg", alt: "Cocktail Hour image 4" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.04 PM.jpeg", alt: "Cocktail Hour image 6" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.05 PM.jpeg", alt: "Cocktail Hour image 7" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.06 PM (1).jpeg", alt: "Cocktail Hour image 8" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.06 PM.jpeg", alt: "Cocktail Hour image 9" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.07 PM.jpeg", alt: "Cocktail Hour image 10" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.08 PM (1).jpeg", alt: "Cocktail Hour image 11" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.08 PM.jpeg", alt: "Cocktail Hour image 12" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.09 PM (1).jpeg", alt: "Cocktail Hour image 13" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.09 PM.jpeg", alt: "Cocktail Hour image 14" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.10 PM (1).jpeg", alt: "Cocktail Hour image 15" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.10 PM.jpeg", alt: "Cocktail Hour image 16" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.11 PM (1).jpeg", alt: "Cocktail Hour image 17" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Cocktail Hour)/WhatsApp Image 2026-06-05 at 3.10.11 PM.jpeg", alt: "Cocktail Hour image 18" }
+        ]
       },
       {
         label: "Day 4",
-        title: "Picnic",
+        title: "Main Event",
         images: [
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.15 AM.jpeg", alt: "Picnic image 1" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.18 AM (1).jpeg", alt: "Picnic image 2" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.18 AM (2).jpeg", alt: "Picnic image 3" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.18 AM.jpeg", alt: "Picnic image 4" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.19 AM.jpeg", alt: "Picnic image 5" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.20 AM (1).jpeg", alt: "Picnic image 6" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.20 AM (2).jpeg", alt: "Picnic image 7" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.20 AM (3).jpeg", alt: "Picnic image 8" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.20 AM.jpeg", alt: "Picnic image 9" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (1).jpeg", alt: "Picnic image 10" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (10).jpeg", alt: "Picnic image 11" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (11).jpeg", alt: "Picnic image 12" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (2).jpeg", alt: "Picnic image 13" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (3).jpeg", alt: "Picnic image 14" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (4).jpeg", alt: "Picnic image 15" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (5).jpeg", alt: "Picnic image 16" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (6).jpeg", alt: "Picnic image 17" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (7).jpeg", alt: "Picnic image 18" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (8).jpeg", alt: "Picnic image 19" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (9).jpeg", alt: "Picnic image 20" },
-          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM.jpeg", alt: "Picnic image 21" }
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.12 PM (1).jpeg", alt: "Main Event image 1" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.12 PM.jpeg", alt: "Main Event image 2" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.13 PM (1).jpeg", alt: "Main Event image 3" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.13 PM.jpeg", alt: "Main Event image 4" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.14 PM (1).jpeg", alt: "Main Event image 5" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.14 PM.jpeg", alt: "Main Event image 6" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.15 PM (1).jpeg", alt: "Main Event image 7" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.15 PM.jpeg", alt: "Main Event image 8" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.16 PM (1).jpeg", alt: "Main Event image 9" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.16 PM.jpeg", alt: "Main Event image 10" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.17 PM (1).jpeg", alt: "Main Event image 11" },
+          { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.17 PM.jpeg", alt: "Main Event image 12" }
         ]
       }
     ]
