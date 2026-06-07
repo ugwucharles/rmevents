@@ -94,7 +94,7 @@ export const about = {
     'At RM Events Experience, we translate your ambitions into gatherings guests remember long after the final toast. From destination events to corporate summits and celebrations to weddings and milestone moments, our team shapes each occasion with discernment and care.',
     'From first concept to final farewell, we bring creativity, precision, and a genuinely personal touch, so your experience feels seamless, composed, and unmistakably yours.',
   ],
-  image: '/media/gallery/formal-party/formal-party-24.jpg',
+  image: '/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.52 PM.jpeg',
   imageAlt: 'RM Events Experience welcome section image',
 }
 
@@ -138,7 +138,7 @@ export const portfolioProjects = [
     coverImage: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.40 PM (3).jpeg",
     days: [
       {
-        label: "Arrival",
+        label: "1/8",
         title: "Arrival in Paradise",
         images: [
           { src: "/events/EBUN 50th Birthday/Arrival/WhatsApp Image 2026-06-05 at 2.53.32 PM (1).jpeg", alt: "Arrival image 1" },
@@ -303,6 +303,33 @@ export const portfolioProjects = [
           { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM (3).jpeg", alt: "Gala Night image 14" },
           { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM (4).jpeg", alt: "Gala Night image 15" },
           { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM.jpeg", alt: "Gala Night image 16" }
+        ]
+      },
+      {
+        label: "Day 3",
+        title: "Picnic",
+        images: [
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.15 AM.jpeg", alt: "Picnic image 1" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.18 AM (1).jpeg", alt: "Picnic image 2" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.18 AM (2).jpeg", alt: "Picnic image 3" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.18 AM.jpeg", alt: "Picnic image 4" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.19 AM.jpeg", alt: "Picnic image 5" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.20 AM (1).jpeg", alt: "Picnic image 6" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.20 AM (2).jpeg", alt: "Picnic image 7" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.20 AM (3).jpeg", alt: "Picnic image 8" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.20 AM.jpeg", alt: "Picnic image 9" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (1).jpeg", alt: "Picnic image 10" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (10).jpeg", alt: "Picnic image 11" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (11).jpeg", alt: "Picnic image 12" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (2).jpeg", alt: "Picnic image 13" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (3).jpeg", alt: "Picnic image 14" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (4).jpeg", alt: "Picnic image 15" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (5).jpeg", alt: "Picnic image 16" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (6).jpeg", alt: "Picnic image 17" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (7).jpeg", alt: "Picnic image 18" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (8).jpeg", alt: "Picnic image 19" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (9).jpeg", alt: "Picnic image 20" },
+          { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM.jpeg", alt: "Picnic image 21" }
         ]
       }
     ]
