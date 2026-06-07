@@ -404,7 +404,7 @@ export const portfolioProjects = [
         ]
       },
       {
-        label: "Day 4",
+        label: "Day 3",
         title: "Dinner",
         images: [
           { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.12 PM (1).jpeg", alt: "Main Event image 1" },
