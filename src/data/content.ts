@@ -172,11 +172,9 @@ export const portfolioProjects = [
         title: "Welcome Cocktail",
         images: [
           { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.36 PM (1).jpeg", alt: "Welcome Cocktail image 1" },
-          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.36 PM (2).jpeg", alt: "Welcome Cocktail image 2" },
           { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.36 PM.jpeg", alt: "Welcome Cocktail image 3" },
           { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.37 PM (1).jpeg", alt: "Welcome Cocktail image 4" },
           { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.37 PM (2).jpeg", alt: "Welcome Cocktail image 5" },
-          { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.37 PM (3).jpeg", alt: "Welcome Cocktail image 6" },
           { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.37 PM (4).jpeg", alt: "Welcome Cocktail image 7" },
           { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.37 PM (5).jpeg", alt: "Welcome Cocktail image 8" },
           { src: "/events/EBUN 50th Birthday/Day 2 (Welcome Cocktail)/WhatsApp Image 2026-06-05 at 2.53.37 PM.jpeg", alt: "Welcome Cocktail image 9" },
@@ -285,28 +283,6 @@ export const portfolioProjects = [
       },
       {
         label: "Day 3",
-        title: "Gala Night",
-        images: [
-          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.25 AM (1).jpeg", alt: "Gala Night image 1" },
-          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.25 AM (2).jpeg", alt: "Gala Night image 2" },
-          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.25 AM.jpeg", alt: "Gala Night image 3" },
-          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (1).jpeg", alt: "Gala Night image 4" },
-          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (2).jpeg", alt: "Gala Night image 5" },
-          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (3).jpeg", alt: "Gala Night image 6" },
-          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (4).jpeg", alt: "Gala Night image 7" },
-          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (5).jpeg", alt: "Gala Night image 8" },
-          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (6).jpeg", alt: "Gala Night image 9" },
-          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM.jpeg", alt: "Gala Night image 10" },
-          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.30 AM.jpeg", alt: "Gala Night image 11" },
-          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM (1).jpeg", alt: "Gala Night image 12" },
-          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM (2).jpeg", alt: "Gala Night image 13" },
-          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM (3).jpeg", alt: "Gala Night image 14" },
-          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM (4).jpeg", alt: "Gala Night image 15" },
-          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM.jpeg", alt: "Gala Night image 16" }
-        ]
-      },
-      {
-        label: "Day 3",
         title: "Picnic",
         images: [
           { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.15 AM.jpeg", alt: "Picnic image 1" },
@@ -330,6 +306,28 @@ export const portfolioProjects = [
           { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (8).jpeg", alt: "Picnic image 19" },
           { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM (9).jpeg", alt: "Picnic image 20" },
           { src: "/events/NMS EX BOYS/Day 3 Picnic/WhatsApp Image 2026-06-06 at 12.20.21 AM.jpeg", alt: "Picnic image 21" }
+        ]
+      },
+      {
+        label: "Day 3",
+        title: "Dinner",
+        images: [
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.25 AM (1).jpeg", alt: "Dinner image 1" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.25 AM (2).jpeg", alt: "Dinner image 2" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.25 AM.jpeg", alt: "Dinner image 3" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (1).jpeg", alt: "Dinner image 4" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (2).jpeg", alt: "Dinner image 5" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (3).jpeg", alt: "Dinner image 6" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (4).jpeg", alt: "Dinner image 7" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (5).jpeg", alt: "Dinner image 8" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM (6).jpeg", alt: "Dinner image 9" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.26 AM.jpeg", alt: "Dinner image 10" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.30 AM.jpeg", alt: "Dinner image 11" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM (1).jpeg", alt: "Dinner image 12" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM (2).jpeg", alt: "Dinner image 13" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM (3).jpeg", alt: "Dinner image 14" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM (4).jpeg", alt: "Dinner image 15" },
+          { src: "/events/NMS EX BOYS/Day 3 Gala night/WhatsApp Image 2026-06-06 at 12.10.31 AM.jpeg", alt: "Dinner image 16" }
         ]
       }
     ]
@@ -407,7 +405,7 @@ export const portfolioProjects = [
       },
       {
         label: "Day 4",
-        title: "Main Event",
+        title: "Dinner",
         images: [
           { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.12 PM (1).jpeg", alt: "Main Event image 1" },
           { src: "/events/Ranti's 40th Birthday/Day 3 (Main Event)/WhatsApp Image 2026-06-05 at 3.10.12 PM.jpeg", alt: "Main Event image 2" },
