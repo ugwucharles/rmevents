@@ -189,9 +189,11 @@ export function Gallery() {
                   </svg>
                 </button>
                 <div className="rm-gallery-modal__meta">
-                  <span className="rm-gallery-modal__progress">
-                    Day {activeDayIndex + 1} of {activeProject.days.length}
-                  </span>
+                  {currentDay?.label !== 'Arrival' && (
+                    <span className="rm-gallery-modal__progress">
+                      Day {activeProject.days[0]?.label === 'Arrival' ? activeDayIndex : activeDayIndex + 1} of {activeProject.days[0]?.label === 'Arrival' ? activeProject.days.length - 1 : activeProject.days.length}
+                    </span>
+                  )}
                   <span className="rm-gallery-modal__counter">
                     {currentImageIndex + 1} / {currentImages.length}
                   </span>

@@ -94,7 +94,7 @@ export const about = {
     'At RM Events Experience, we translate your ambitions into gatherings guests remember long after the final toast. From destination events to corporate summits and celebrations to weddings and milestone moments, our team shapes each occasion with discernment and care.',
     'From first concept to final farewell, we bring creativity, precision, and a genuinely personal touch, so your experience feels seamless, composed, and unmistakably yours.',
   ],
-  image: '/events/EBUN 50th Birthday/Day 4 (Birthday Dinner)/WhatsApp Image 2026-06-05 at 2.53.52 PM.jpeg',
+  image: '/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.42 PM (1).jpeg',
   imageAlt: 'RM Events Experience welcome section image',
 }
 
@@ -138,7 +138,7 @@ export const portfolioProjects = [
     coverImage: "/events/EBUN 50th Birthday/Day 3 (Yatch Tour)/WhatsApp Image 2026-06-05 at 2.53.40 PM (3).jpeg",
     days: [
       {
-        label: "1/8",
+        label: "Arrival",
         title: "Arrival in Paradise",
         images: [
           { src: "/events/EBUN 50th Birthday/Arrival/WhatsApp Image 2026-06-05 at 2.53.32 PM (1).jpeg", alt: "Arrival image 1" },
