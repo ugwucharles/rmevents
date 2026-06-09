@@ -97,7 +97,7 @@ export function ConsultationModal({ isOpen, onClose }: ConsultationModalProps) {
     }
 
     try {
-      const response = await fetch('https://formspree.io/f/xbdejwja', {
+      const response = await fetch('https://formspree.io/f/mrevkrvo', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

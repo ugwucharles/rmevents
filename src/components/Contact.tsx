@@ -19,7 +19,7 @@ export function Contact() {
     }
 
     try {
-      const response = await fetch('https://formspree.io/f/xbderkeq', {
+      const response = await fetch('https://formspree.io/f/meewkvwe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
